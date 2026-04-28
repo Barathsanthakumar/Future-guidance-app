@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Future Tech Educational Guidance</title>
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  // Replace with your actual EmailJS Public Key
+  emailjs.init("rxqLb7HyGGajTgSAQ");
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
@@ -188,9 +194,11 @@ nav button.active-btn{background:var(--green);color:#fff}
 .finput:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(29,185,84,.12);background:#fff}
 select.finput{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%2364748b' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:18px;padding-right:38px}
 textarea.finput{resize:vertical;min-height:90px}
-.fsub{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px}
-@media(max-width:400px){.fsub{grid-template-columns:1fr}}
 .btn-submit{display:flex;align-items:center;justify-content:center;gap:8px;border:none;border-radius:10px;padding:13px;font-family:'Outfit',sans-serif;font-size:14.5px;font-weight:700;cursor:pointer;transition:all .2s}
+.btn-submit-main{width:100%;background:var(--grad-blue-green);color:#fff;box-shadow:0 4px 18px rgba(29,185,84,.3);border-radius:12px!important;padding:15px!important;font-size:15px!important;letter-spacing:.3px}
+.btn-submit-main:hover:not(:disabled){opacity:.93;transform:translateY(-2px);box-shadow:0 6px 24px rgba(29,185,84,.4)}
+.btn-submit-main:disabled{cursor:not-allowed;opacity:.7}
+#form-msg{display:none;padding:12px 16px;border-radius:10px;font-size:13.5px;font-weight:600;margin-bottom:14px;text-align:center;transition:all .3s}
 .btn-wa-sub{background:linear-gradient(135deg,#25d366,#1ebe59);color:#fff;box-shadow:0 4px 14px rgba(37,211,102,.3)}
 .btn-wa-sub:hover{opacity:.9;transform:translateY(-1px)}
 .btn-em-sub{background:var(--grad-blue-green);color:#fff;box-shadow:0 4px 14px rgba(29,185,84,.25)}
@@ -632,26 +640,26 @@ footer{background:linear-gradient(135deg,#071a0c,var(--navy));color:rgba(255,255
       </div>
       <div class="form-card">
         <h3>Student Application Form</h3>
-        <form onsubmit="return false;">
-          <div class="frow">
-            <input id="f-name" class="finput" required placeholder="Full Name" type="text" autocomplete="name">
-            <input id="f-phone" class="finput" required placeholder="Phone Number" type="tel" autocomplete="tel">
-          </div>
-          <input id="f-email" class="finput" required placeholder="Email Address" type="email" autocomplete="email">
-          <input id="f-city" class="finput" required placeholder="City / District" type="text" autocomplete="address-level2">
-          <select id="f-course" class="finput">
-            <option value="">Select Course Category</option>
-            <option>Diploma</option><option>Engineering</option><option>Medical</option>
-            <option>Nursing</option><option>Pharmacy</option><option>Allied Health</option>
-            <option>Therapy</option><option>Arts &amp; Science</option><option>Management</option>
-            <option>Law</option><option>Education</option><option>Agriculture</option><option>Others</option>
-          </select>
-          <textarea id="f-msg" class="finput" maxlength="250" placeholder="Message (Optional – Max 250 chars)"></textarea>
-          <div class="fsub">
-            <button type="button" class="btn-submit btn-wa-sub" onclick="sendWhatsApp()"><i class="fab fa-whatsapp"></i> WhatsApp</button>
-            <button type="button" class="btn-submit btn-em-sub" onclick="sendEmail()"><i class="fas fa-envelope"></i> Email</button>
-          </div>
-        </form>
+<!-- Status message -->
+        <div id="form-msg"></div>
+        <div class="frow">
+          <input id="f-name" class="finput" required placeholder="Full Name" type="text" autocomplete="name">
+          <input id="f-phone" class="finput" required placeholder="Phone Number" type="tel" autocomplete="tel">
+        </div>
+        <input id="f-email" class="finput" required placeholder="Email Address" type="email" autocomplete="email">
+        <input id="f-city" class="finput" required placeholder="City / District" type="text" autocomplete="address-level2">
+        <select id="f-course" class="finput">
+          <option value="">Select Course Category</option>
+          <option>Diploma</option><option>Engineering</option><option>Medical</option>
+          <option>Nursing</option><option>Pharmacy</option><option>Allied Health</option>
+          <option>Therapy</option><option>Arts &amp; Science</option><option>Management</option>
+          <option>Law</option><option>Education</option><option>Agriculture</option><option>Others</option>
+        </select>
+        <textarea id="f-msg" class="finput" maxlength="250" placeholder="Message (Optional – Max 250 chars)"></textarea>
+        <!-- Single Submit Button -->
+        <button type="button" class="btn-submit btn-submit-main" id="submitBtn" onclick="submitForm()">
+          <i class="fas fa-paper-plane"></i> Submit Application
+        </button>
       </div>
     </div>
   </div>
@@ -984,26 +992,72 @@ function showCourses(type) {
   document.getElementById('course-content').innerHTML = h;
   document.getElementById('course-content').scrollIntoView({ behavior:'smooth', block:'start' });
 }
-function getForm() {
-  const n=document.getElementById('f-name').value.trim(),
-        ph=document.getElementById('f-phone').value.trim(),
-        em=document.getElementById('f-email').value.trim(),
-        ci=document.getElementById('f-city').value.trim(),
-        co=document.getElementById('f-course').value.trim(),
-        ms=document.getElementById('f-msg').value.trim();
-  if (!n||!ph||!em||!ci){ alert('Please fill in Name, Phone, Email and City.'); return null; }
-  return {n,ph,em,ci,co,ms};
+// ===== FORM SUBMIT via EmailJS =====
+function showMsg(txt, ok) {
+  const el = document.getElementById('form-msg');
+  el.textContent = txt;
+  el.style.display = 'block';
+  el.style.padding = '12px 16px';
+  el.style.borderRadius = '10px';
+  el.style.fontSize = '13.5px';
+  el.style.fontWeight = '600';
+  el.style.marginBottom = '14px';
+  el.style.textAlign = 'center';
+  el.style.background = ok ? '#dcfce7' : '#fee2e2';
+  el.style.color = ok ? '#14532d' : '#991b1b';
+  el.style.border = ok ? '1.5px solid #86efac' : '1.5px solid #fca5a5';
 }
-function sendWhatsApp() {
-  const d=getForm(); if(!d) return;
-  const t='📋 *New Application – Future Tech*\n\n👤 Name: '+d.n+'\n📞 Phone: '+d.ph+'\n✉️ Email: '+d.em+'\n🏙️ City: '+d.ci+'\n🎓 Course: '+(d.co||'Not selected')+'\n💬 Message: '+(d.ms||'N/A');
-  window.open('https://wa.me/918248174612?text='+encodeURIComponent(t),'_blank');
-}
-function sendEmail() {
-  const d=getForm(); if(!d) return;
-  var subj='New Application from '+d.n;
-  var body='Name: '+d.n+'\nPhone: '+d.ph+'\nEmail: '+d.em+'\nCity: '+d.ci+'\nCourse: '+(d.co||'Not selected')+'\nMessage: '+(d.ms||'N/A');
-  window.location.href='mailto:futureeducationalguidance25@gmail.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+
+function submitForm() {
+  const n  = document.getElementById('f-name').value.trim();
+  const ph = document.getElementById('f-phone').value.trim();
+  const em = document.getElementById('f-email').value.trim();
+  const ci = document.getElementById('f-city').value.trim();
+  const co = document.getElementById('f-course').value.trim();
+  const ms = document.getElementById('f-msg').value.trim();
+
+  if (!n || !ph || !em || !ci) {
+    showMsg('⚠️ Please fill in Name, Phone, Email and City.', false);
+    return;
+  }
+
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+  // EmailJS template parameters — must match your EmailJS template variables
+  const params = {
+    to_email:  'futureeducationalguidance25@gmail.com',
+    from_name: n,
+    reply_to:  em,
+    phone:     ph,
+    city:      ci,
+    course:    co || 'Not selected',
+    message:   ms || 'N/A'
+  };
+
+  // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS IDs
+  emailjs.send('service_0fwxma1', 'template_walolhc', params)
+    .then(() => {
+      showMsg('✅ Application submitted successfully! We will contact you soon.', true);
+      btn.innerHTML = '<i class="fas fa-check"></i> Submitted!';
+      btn.style.background = 'linear-gradient(135deg,#22c55e,#16a34a)';
+      // Clear form
+      ['f-name','f-phone','f-email','f-city','f-msg'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('f-course').value = '';
+      // Reset button after 5s
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit Application';
+        btn.style.background = '';
+      }, 5000);
+    })
+    .catch((err) => {
+      showMsg('❌ Submission failed. Please contact us directly via WhatsApp or Email.', false);
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit Application';
+      console.error('EmailJS error:', err);
+    });
 }
 // ===== SCHOLARSHIP EXPAND CARDS =====
 const SCHOLARSHIPS = [
