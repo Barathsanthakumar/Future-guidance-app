@@ -2,1208 +2,792 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Future Tech Career Solutions Pvt Ltd</title>
-<!-- EmailJS SDK -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>
-  // Replace with your actual EmailJS Public Key
-  emailjs.init("rxqLb7HyGGajTgSAQ");
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Future Tech Career Solutions | Delivering Tomorrow’s Guidance Today!</title>
+<meta id="metaDesc" name="description" content="Personalised career, education and admission guidance from Future Tech Career Solutions (OPC) Private Limited, Tiruchengode, Namakkal.">
+<link rel="canonical" href="https://www.futureguidance.in/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Future Tech Career Solutions">
+<meta property="og:title" content="Future Tech Career Solutions | Delivering Tomorrow’s Guidance Today!">
+<meta property="og:description" content="Personalised career, education and admission guidance to help students make informed decisions about courses, colleges and future opportunities.">
+<meta property="og:url" content="https://www.futureguidance.in/">
+<meta property="og:image" content="https://i.ibb.co/fdYb2ktk/logo.png">
+<meta name="theme-color" content="#1565c0">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Future Tech Career Solutions (OPC) Private Limited","url":"https://www.futureguidance.in/","logo":"https://i.ibb.co/fdYb2ktk/logo.png","slogan":"Delivering Tomorrow’s Guidance Today!","telephone":"+91 9789956246","email":"futureeducationalguidance25@gmail.com","address":{"@type":"PostalAddress","streetAddress":"13/141, Pillaiyar Kovil Street, Sandaipettai, Elachipalayam PO, Tiruchengode TK","addressLocality":"Namakkal","postalCode":"637202","addressRegion":"Tamil Nadu","addressCountry":"IN"}}
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>emailjs.init("rxqLb7HyGGajTgSAQ");</script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --ink:#0f1f0f;
-  --navy:#0a3d1f;
-  --blue:#1565c0;
-  --blue-light:#42a5f5;
-  --green:#25d366;
-  --green2:#1fba58;
-  --green-dark:#128c3e;
-  --green-fade:#e8faf0;
-  --green-fade2:#c8f5dc;
-  --white:#ffffff;
-  --off:#f4fdf7;
-  --muted:#4a7a5a;
-  --border:#c6ecd4;
-  --card:#ffffff;
-  --r:16px;
-  --shadow:0 4px 24px rgba(10,61,31,.10);
-  --shadow-lg:0 12px 48px rgba(10,61,31,.18);
-  --grad-main:linear-gradient(135deg,var(--navy) 0%,var(--green-dark) 50%,var(--blue) 100%);
-  --grad-hero:linear-gradient(135deg,#0a3d1f 0%,#1db954 60%,#1565c0 100%);
-  --grad-green:linear-gradient(135deg,var(--green),var(--green2));
-  --grad-blue-green:linear-gradient(135deg,var(--blue),var(--green));
-  --gold:#f59e0b;
-  --teal:#0891b2;
+  /* Brand: FUTURE = blue, TECH = green, white, dark navy text */
+  --blue:#1565c0;--blue-dark:#0d4a94;--blue-tint:#eaf2fc;--blue-line:#c9dcf3;
+  --green:#22a84f;--green-dark:#168a3e;--green-tint:#e8f7ee;--green-line:#bfe6cd;
+  --ink:#0f1b33;--muted:#4b5b73;--white:#fff;--line:#dde5f0;
+  --r:12px;--shadow:0 2px 14px rgba(15,27,51,.07);
 }
-html{scroll-behavior:smooth}
-body{font-family:'Outfit',sans-serif;background:var(--off);color:var(--ink);font-size:15px;line-height:1.65;-webkit-text-size-adjust:100%}
-::-webkit-scrollbar{width:6px}
-::-webkit-scrollbar-track{background:#e8faf0}
-::-webkit-scrollbar-thumb{background:var(--green);border-radius:3px}
-header{background:rgba(255,255,255,.97);border-bottom:2px solid var(--green-fade2);position:sticky;top:0;z-index:500;width:100%}
-.hdr{max-width:1280px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex:1;min-width:0}
-.logo img{height:44px;width:auto;flex-shrink:0}
-.logo-txt{min-width:0;overflow:hidden}
-.logo-txt h1{font-family:'Nunito',sans-serif;font-weight:900;color:var(--navy);line-height:1.2;font-size:clamp(12px,2.2vw,18px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.logo-txt p{font-size:9px;color:var(--muted);font-weight:600;white-space:nowrap}
-.ham{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer;background:none;border:2px solid var(--border);border-radius:8px;padding:8px 10px;flex-shrink:0;position:relative;z-index:800}
-.ham span{display:block;width:22px;height:2px;background:var(--navy);border-radius:2px;transition:all .3s}
-.ham.open{border-color:var(--green);background:var(--green-fade)}
-.ham.open span{background:var(--green-dark)}
-.ham.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.ham.open span:nth-child(2){opacity:0;transform:scaleX(0)}
-.ham.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-nav{display:flex;align-items:center;gap:4px;flex-wrap:nowrap}
-nav button{padding:8px 14px;background:transparent;color:var(--ink);border:none;border-radius:8px;font-family:'Outfit',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap}
-nav button:hover{background:var(--green-fade);color:var(--green-dark)}
-nav button.active-btn{background:var(--green);color:#fff}
-.nav-cta{background:var(--grad-blue-green)!important;color:#fff!important;border-radius:8px!important;box-shadow:0 4px 14px rgba(29,185,84,.3)!important}
-.nav-cta:hover{opacity:.88!important}
-@media(max-width:860px){
-  .ham{display:flex}
-  .logo-txt h1{font-size:13px}
-  nav{display:none;position:fixed;top:66px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;z-index:750;box-shadow:0 8px 32px rgba(14,35,86,.15);border-top:3px solid var(--green);padding:8px 12px 14px;max-height:calc(100vh - 66px);overflow-y:auto}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:'Outfit',sans-serif;background:var(--white);color:var(--ink);font-size:16px;line-height:1.65;-webkit-text-size-adjust:100%}
+h1,h2,h3,h4{font-family:'Nunito',sans-serif;line-height:1.2;color:var(--blue-dark)}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.sec{padding:72px 0}.sec.alt{background:var(--blue-tint)}.sec.alt-g{background:var(--green-tint)}
+.sec-head{max-width:680px;margin-bottom:36px}
+.sec-head h2{font-size:clamp(26px,3.6vw,38px);font-weight:800;margin-bottom:10px}
+.sec-head p{color:var(--muted)}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:10px;font:600 15px 'Outfit',sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;min-height:48px;transition:background .2s,color .2s,border-color .2s}
+.btn-blue{background:var(--blue);color:#fff}.btn-blue:hover{background:var(--blue-dark)}
+.btn-green{background:var(--green-dark);color:#fff}.btn-green:hover{background:#0f7133}
+.btn-line{background:#fff;color:var(--blue);border-color:var(--blue)}.btn-line:hover{background:var(--blue-tint)}
+.btn-white{background:#fff;color:var(--blue-dark)}.btn-white:hover{background:var(--blue-tint)}
+
+/* header */
+header{position:sticky;top:0;z-index:600;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+.hdr{max-width:1180px;margin:0 auto;padding:8px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo img{height:44px;width:auto}
+.logo b{font:900 20px 'Nunito',sans-serif;color:var(--blue);display:block;line-height:1.1}
+.logo b i{font-style:normal;color:var(--green-dark)}
+.logo small{display:block;font-size:10.5px;color:var(--muted);line-height:1.2}
+nav{display:flex;align-items:center;gap:2px}
+nav a{padding:9px 12px;border-radius:8px;color:var(--ink);text-decoration:none;font-weight:500;font-size:14.5px;white-space:nowrap}
+nav a:hover{background:var(--blue-tint);color:var(--blue)}
+nav a.on{color:var(--blue);font-weight:700;box-shadow:inset 0 -3px 0 var(--green)}
+nav a.cta{background:var(--green-dark);color:#fff;margin-left:6px;box-shadow:none}
+nav a.cta:hover{background:#0f7133}
+.ham{display:none;background:none;border:2px solid var(--blue-line);border-radius:8px;width:46px;height:46px;font-size:20px;color:var(--blue);cursor:pointer}
+@media(max-width:980px){
+  .ham{display:block}
+  nav{display:none;position:fixed;top:68px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:10px 16px 18px;border-top:3px solid var(--green);box-shadow:0 12px 28px rgba(15,27,51,.14);max-height:calc(100vh - 68px);overflow:auto}
   nav.open{display:flex}
-  nav button{width:100%;text-align:left;padding:14px 16px;font-size:15px;font-weight:600;color:var(--ink);background:transparent;border:none;border-radius:10px;border-bottom:1px solid #f1f5f9;transition:background .15s,color .15s}
-  nav button:last-child{border-bottom:none}
-  nav button:active{background:#f1f5f9}
-  nav button.active-btn{background:var(--green-fade);color:var(--green-dark);font-weight:700}
-  .nav-cta{background:var(--grad-blue-green)!important;color:#fff!important;margin-top:8px;border-radius:10px!important;border:none!important;text-align:center!important;box-shadow:0 4px 16px rgba(29,185,84,.3)!important}
-  .nav-cta:active{opacity:.9!important}
+  nav a{padding:14px;font-size:16px;border-bottom:1px solid var(--line);border-radius:0}
+  nav a.on{box-shadow:none;background:var(--blue-tint)}
+  nav a.cta{text-align:center;margin:10px 0 0;border-radius:10px}
 }
-@media(max-width:400px){.logo img{height:36px}.logo-txt h1{font-size:11.5px}}
-.page{display:none}.page.active{display:block}
-.slider{position:relative;overflow:hidden}
-.slide{display:none;position:relative;align-items:stretch}
-.slide.active{display:flex}
-@keyframes slideIn{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
-.slide.active .slide-inner{animation:slideIn .5s cubic-bezier(.22,1,.36,1) both}
-.slide-inner{position:relative;z-index:2;max-width:1280px;margin:0 auto;padding:60px 32px 50px;display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;min-height:480px;background:#fff}
-.slide::before{content:'';position:absolute;inset:0;z-index:1;background-color:#fff;background-image:radial-gradient(circle,#d8e8ff 1px,transparent 1px);background-size:28px 28px}
-.slide-copy{flex:1;max-width:560px;position:relative;z-index:2}
-.slide-tag{display:inline-flex;align-items:center;gap:8px;background:var(--green-fade);border:1px solid var(--border);border-radius:100px;padding:5px 14px;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--green-dark);margin-bottom:18px}
-.slide-tag i{color:var(--green-dark)}
-.slide-copy h2{font-family:'Nunito',sans-serif;font-size:clamp(32px,5vw,58px);font-weight:900;line-height:1.1;margin-bottom:14px;color:var(--navy)}
-.slide-copy h2 span{color:#e65c00}
-.slide-subtitle{font-size:clamp(13px,1.8vw,15px);color:#555;margin-bottom:28px;max-width:420px;line-height:1.7}
-.slide-btns{display:flex;flex-wrap:wrap;gap:12px}
-.btn-hero{padding:13px 26px;border-radius:8px;font-family:'Outfit',sans-serif;font-size:14px;font-weight:700;cursor:pointer;border:none;transition:all .22s;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
-.btn-gold{background:#f59e0b;color:#fff}
-.btn-gold:hover{background:#d97706;color:#fff}
-.btn-outline-navy{background:transparent;color:var(--navy);border:2px solid var(--navy)}
-.btn-outline-navy:hover{background:var(--navy);color:#fff}
-.btn-solid{background:#fff;color:var(--navy)}
-.btn-solid:hover{background:#f0f0f0}
-.btn-wa{background:#25d366;color:#fff}
-.btn-wa:hover{background:#20b858}
-.slide-person{flex-shrink:0;width:380px;height:400px;position:relative;z-index:2;display:flex;align-items:flex-end;justify-content:center}
-.slide-person img{width:100%;height:100%;object-fit:contain;object-position:bottom center;filter:drop-shadow(0 8px 24px rgba(0,0,0,.15))}
-.sdots{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:10}
-.sdot{width:8px;height:8px;border-radius:50%;background:rgba(10,61,31,.25);cursor:pointer;transition:all .3s;border:none}
-.sdot.on{width:26px;border-radius:4px;background:var(--navy)}
-@media(max-width:768px){.slide-person{width:240px;height:260px}.slide-inner{padding:48px 20px 60px}}
-@media(max-width:560px){.slide-person{display:none}.slide-copy{max-width:100%}.slide-inner{padding:48px 20px 60px;min-height:360px}}
-.tieups-sec{background:#fff;padding:48px 0;border-bottom:2px solid var(--border)}
-.tieups-inner{max-width:1280px;margin:0 auto;padding:0 20px}
-.tieups-head{text-align:center;margin-bottom:32px}
-.tieups-head h2{font-family:'Nunito',sans-serif;font-size:clamp(22px,3.5vw,34px);font-weight:900;color:var(--navy)}
-.tieups-head p{color:var(--muted);font-size:14px;margin-top:6px}
-.tieups-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.tieup-card{background:var(--green-fade);border:1.5px solid var(--border);border-radius:14px;padding:20px 22px}
-.tieup-card h3{font-family:'Nunito',sans-serif;font-size:15px;font-weight:800;color:var(--navy);margin-bottom:12px;display:flex;align-items:center;gap:8px}
-.tieup-card ul{list-style:none;padding:0}
-.tieup-card ul li{font-size:13px;color:#374;padding:5px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
-.tieup-card ul li:last-child{border-bottom:none}
-.tieup-card ul li::before{content:'🎓';font-size:12px}
-.sec{padding:80px 0}
-.sec-sm{padding:56px 0}
-.wrap{max-width:1280px;margin:0 auto;padding:0 20px}
-.sec-head{text-align:center;margin-bottom:52px}
-.sec-head .eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--green-dark);background:var(--green-fade);padding:6px 16px;border-radius:100px;margin-bottom:14px}
-.sec-head h2{font-family:'Nunito',sans-serif;font-size:clamp(26px,4vw,42px);font-weight:900;color:var(--navy);line-height:1.2}
-.sec-head h2 em{font-style:normal;color:var(--green-dark)}
-.sec-head p{max-width:560px;margin:12px auto 0;color:var(--muted);font-size:15px}
-.home-banner{position:relative;width:100%;height:clamp(320px,50vw,520px);overflow:hidden}
-.home-banner img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}
-.home-banner-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,20,60,.82) 0%,rgba(10,20,60,.55) 55%,rgba(10,20,60,.15) 100%);display:flex;align-items:center}
-.home-banner-content{max-width:1280px;width:100%;margin:0 auto;padding:40px 28px}
-.home-banner-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.25);border-radius:100px;padding:6px 16px;font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#fff;margin-bottom:18px}
-.home-banner-tag i{color:var(--gold)}
-.home-banner-content h2{font-family:'Nunito',sans-serif;font-size:clamp(26px,4.5vw,50px);font-weight:900;color:#fff;line-height:1.15;margin-bottom:14px;max-width:580px}
-.home-banner-content h2 span{color:var(--gold)}
-.home-banner-content p{font-size:clamp(13px,1.8vw,16px);color:rgba(255,255,255,.85);max-width:500px;line-height:1.75;margin-bottom:28px}
-.home-banner-btns{display:flex;flex-wrap:wrap;gap:12px}
-@media(max-width:500px){.home-banner{height:420px}.home-banner-overlay{background:linear-gradient(180deg,rgba(10,20,60,.6) 0%,rgba(10,20,60,.85) 100%);align-items:flex-end}.home-banner-content{padding:24px 20px 32px}}
-.stats{background:var(--grad-main);padding:40px 20px}
-.stats-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;text-align:center}
-.stat-num{font-family:'Nunito',sans-serif;font-size:clamp(32px,5vw,48px);font-weight:900;color:#fff;line-height:1}
-.stat-num span{color:var(--gold)}
-.stat-lbl{font-size:13px;color:rgba(255,255,255,.7);font-weight:600;margin-top:4px}
-.feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
-.feat-card{background:var(--card);border-radius:var(--r);padding:32px 28px;box-shadow:var(--shadow);border:1px solid var(--border);transition:all .3s;position:relative;overflow:hidden}
-.feat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad-blue-green)}
-.feat-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
-.feat-icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:18px}
-.feat-card h3{font-family:'Nunito',sans-serif;font-size:18px;font-weight:800;margin-bottom:8px;color:var(--navy)}
-.feat-card p{font-size:13.5px;color:var(--muted);line-height:1.7}
-.courses-bg{background:linear-gradient(160deg,#0a2d14 0%,#0a3d1f 40%,#1565c0 100%);position:relative;overflow:hidden}
-.courses-bg::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%, rgba(29,185,84,.15) 0%, transparent 50%),radial-gradient(circle at 80% 20%, rgba(21,101,192,.12) 0%, transparent 40%)}
-.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:16px;position:relative;z-index:1}
-.cat-card{background:rgba(255,255,255,.08);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:22px 12px 18px;text-align:center;cursor:pointer;transition:all .25s;-webkit-tap-highlight-color:transparent}
-.cat-card:hover,.cat-card:active{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.35);transform:translateY(-5px)}
-.cat-icon{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:1.4rem}
-.cat-card h3{font-size:13px;font-weight:700;color:#fff;line-height:1.35}
-#course-content{margin-top:32px;position:relative;z-index:1}
-.cgrp{margin-bottom:36px}
-.cgrp-title{font-family:'Nunito',sans-serif;font-size:clamp(16px,2.5vw,20px);font-weight:800;margin-bottom:16px;color:#fff;display:flex;align-items:center;gap:10px}
-.cgrp-title::before{content:'';display:block;width:4px;height:22px;border-radius:2px;background:var(--gold)}
-.citems{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
-.citem{padding:12px 16px;border-radius:10px;font-size:13px;font-weight:600;transition:transform .2s;cursor:default}
-.citem:hover{transform:scale(1.02)}
-.citem.blue{background:#dbeafe;color:#1e3a8a;border-left:3px solid #3b82f6}
-.citem.green{background:#dcfce7;color:#14532d;border-left:3px solid #22c55e}
-.citem.purple{background:#f3e8ff;color:#581c87;border-left:3px solid #a855f7}
-@media(max-width:480px){.citems{grid-template-columns:1fr}}
-.steps-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;position:relative}
-.steps-wrap::before{content:'';position:absolute;top:36px;left:10%;right:10%;height:2px;background:linear-gradient(90deg,var(--blue),var(--teal));z-index:0}
-@media(max-width:700px){.steps-wrap::before{display:none}}
-.step{background:var(--card);border-radius:var(--r);padding:32px 24px;text-align:center;box-shadow:var(--shadow);position:relative;z-index:1;border:1px solid var(--border);transition:all .3s}
-.step:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
-.step-num{width:56px;height:56px;border-radius:50%;background:var(--grad-blue-green);color:#fff;font-family:'Nunito',sans-serif;font-size:22px;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 6px 20px rgba(29,185,84,.3)}
-.step h3{font-family:'Nunito',sans-serif;font-size:17px;font-weight:800;color:var(--navy);margin-bottom:8px}
-.step p{font-size:13px;color:var(--muted)}
-.apply-wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-@media(max-width:800px){.apply-wrap{grid-template-columns:1fr}}
-.apply-info h2{font-family:'Nunito',sans-serif;font-size:clamp(24px,4vw,38px);font-weight:900;color:var(--navy);line-height:1.2;margin-bottom:16px}
-.apply-info p{color:var(--muted);font-size:15px;margin-bottom:28px}
-.contact-pill{display:flex;align-items:center;gap:14px;background:var(--off);border:1px solid var(--border);border-radius:14px;padding:16px 20px;margin-bottom:12px;text-decoration:none;transition:all .2s}
-.contact-pill:hover{background:var(--green-fade);border-color:var(--green);transform:translateX(4px)}
-.cp-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
-.cp-label{font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px}
-.cp-val{font-size:14px;font-weight:700;color:var(--navy)}
-.form-card{background:var(--card);border-radius:20px;padding:36px 32px;box-shadow:var(--shadow-lg);border:1px solid var(--border)}
-.form-card h3{font-family:'Nunito',sans-serif;font-size:22px;font-weight:900;color:var(--navy);margin-bottom:24px}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:480px){.frow{grid-template-columns:1fr}}
-.finput{width:100%;border:1.5px solid var(--border);border-radius:10px;padding:12px 15px;font-family:'Outfit',sans-serif;font-size:14px;outline:none;transition:border-color .2s,box-shadow .2s;background:#fafbff;color:var(--ink);-webkit-appearance:none;appearance:none;margin-bottom:14px;display:block}
-.finput:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(29,185,84,.12);background:#fff}
-select.finput{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%2364748b' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:18px;padding-right:38px}
-textarea.finput{resize:vertical;min-height:90px}
-.btn-submit{display:flex;align-items:center;justify-content:center;gap:8px;border:none;border-radius:10px;padding:13px;font-family:'Outfit',sans-serif;font-size:14.5px;font-weight:700;cursor:pointer;transition:all .2s}
-.btn-submit-main{width:100%;background:var(--grad-blue-green);color:#fff;box-shadow:0 4px 18px rgba(29,185,84,.3);border-radius:12px!important;padding:15px!important;font-size:15px!important;letter-spacing:.3px}
-.btn-submit-main:hover:not(:disabled){opacity:.93;transform:translateY(-2px);box-shadow:0 6px 24px rgba(29,185,84,.4)}
-.btn-submit-main:disabled{cursor:not-allowed;opacity:.7}
-#form-msg{display:none;padding:12px 16px;border-radius:10px;font-size:13.5px;font-weight:600;margin-bottom:14px;text-align:center;transition:all .3s}
-.btn-wa-sub{background:linear-gradient(135deg,#25d366,#1ebe59);color:#fff;box-shadow:0 4px 14px rgba(37,211,102,.3)}
-.btn-wa-sub:hover{opacity:.9;transform:translateY(-1px)}
-.btn-em-sub{background:var(--grad-blue-green);color:#fff;box-shadow:0 4px 14px rgba(29,185,84,.25)}
-.btn-em-sub:hover{opacity:.9;transform:translateY(-1px)}
-.founder-card{display:flex;gap:36px;align-items:flex-start;background:var(--card);border-radius:20px;box-shadow:var(--shadow-lg);border:1px solid var(--border);overflow:hidden;margin-bottom:48px}
-.founder-left{background:linear-gradient(160deg,var(--navy),var(--blue));padding:40px 28px;display:flex;flex-direction:column;align-items:center;gap:16px;min-width:190px;flex-shrink:0}
-.founder-avatar{width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,.15);border:3px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:2.6rem;color:rgba(255,255,255,.8)}
-.founder-badge-wrap{text-align:center}
-.founder-badge{display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:var(--navy);font-size:11px;font-weight:800;padding:6px 12px;border-radius:100px;text-align:center;line-height:1.3}
-.founder-right{padding:32px 32px 32px 0;flex:1}
-.founder-name{font-family:'Nunito',sans-serif;font-size:clamp(20px,3vw,26px);font-weight:900;color:var(--navy);line-height:1.2}
-.founder-qual{font-size:13px;color:var(--blue);font-weight:700;margin:4px 0 18px}
-.founder-bio{display:flex;flex-direction:column;gap:12px;margin-bottom:20px}
-.founder-bio p{font-size:14px;color:#374151;line-height:1.8}
-.founder-quote{background:linear-gradient(135deg,#eff6ff,#e0e7ff);border-left:4px solid var(--blue);border-radius:10px;padding:14px 18px;font-size:13.5px;font-weight:600;color:var(--navy);font-style:italic;margin-top:4px;display:flex;gap:10px;align-items:flex-start}
-.founder-quote i{color:var(--blue);margin-top:2px;flex-shrink:0}
-.founder-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.founder-tags span{display:inline-flex;align-items:center;gap:6px;background:#f1f5f9;color:var(--ink);font-size:12px;font-weight:600;padding:6px 12px;border-radius:100px}
-.founder-tags span i{color:var(--blue);font-size:.75rem}
-.team-subhead{font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:var(--navy);margin-bottom:20px;display:flex;align-items:center;gap:10px}
-.team-subhead::before{content:'';display:block;width:4px;height:22px;background:var(--green);border-radius:2px}
-@media(max-width:700px){.founder-card{flex-direction:column;gap:0}.founder-left{flex-direction:row;min-width:unset;padding:24px 20px;width:100%;justify-content:flex-start}.founder-avatar{width:72px;height:72px;font-size:1.8rem;flex-shrink:0}.founder-right{padding:20px}}
-.about-body{max-width:820px;margin:0 auto 40px;display:flex;flex-direction:column;gap:16px}
-.about-body p{font-size:15px;color:#374151;line-height:1.85}
-.about-vision{background:linear-gradient(135deg,#eff6ff,#e0e7ff);border-left:4px solid var(--blue);border-radius:10px;padding:16px 20px;font-weight:600;color:var(--navy)!important;display:flex;align-items:flex-start;gap:12px}
-.about-vision i{color:var(--gold);font-size:1.1rem;margin-top:2px;flex-shrink:0}
-.why-box{max-width:820px;margin:0 auto;background:linear-gradient(135deg,var(--navy),var(--blue));border-radius:16px;padding:32px 36px}
-.why-title{font-family:'Nunito',sans-serif;font-size:20px;font-weight:900;color:#fff;margin-bottom:20px;display:flex;align-items:center;gap:10px}
-.why-title i{color:var(--gold)}
-.why-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-.why-item{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border-radius:10px;padding:12px 16px;font-size:14px;font-weight:600;color:#fff}
-.why-item i{color:var(--gold);font-size:.85rem;flex-shrink:0}
-@media(max-width:480px){.why-box{padding:24px 20px}.why-list{grid-template-columns:1fr}}
-.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
-.about-card{background:var(--card);border-radius:var(--r);padding:28px;box-shadow:var(--shadow);border:1px solid var(--border);transition:all .3s;display:flex;align-items:flex-start;gap:18px}
-.about-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
-.about-ic{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
-.about-card h3{font-family:'Nunito',sans-serif;font-size:17px;font-weight:800;color:var(--navy);margin-bottom:6px}
-.about-card p{font-size:13px;color:var(--muted);line-height:1.7}
-.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
-.team-card{background:var(--card);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--border);transition:all .35s;text-align:center}
-.team-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
-.team-img{width:100%;aspect-ratio:1/1;overflow:hidden;background:linear-gradient(135deg,#e0e7ff,#dbeafe)}
-.team-img img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .4s}
-.team-card:hover .team-img img{transform:scale(1.06)}
-.team-body{padding:16px 14px 20px}
-.team-body h4{font-family:'Nunito',sans-serif;font-size:14px;font-weight:900;color:var(--navy);margin-bottom:2px}
-.team-qual{font-size:12px;color:var(--muted);margin-bottom:10px}
-.team-badge{display:inline-block;font-size:11px;font-weight:700;padding:5px 12px;border-radius:100px}
-.badge-senior{background:linear-gradient(135deg,#dbeafe,#e0e7ff);color:var(--blue)}
-.badge-advisor{background:#f0fdf4;color:var(--green)}
-.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
-.testi-card{background:var(--off);border-radius:var(--r);padding:28px 24px;border:1px solid var(--border);transition:all .3s;display:flex;flex-direction:column;gap:14px;position:relative}
-.testi-card::before{content:'\201C';position:absolute;top:12px;right:20px;font-size:72px;line-height:1;color:var(--blue);opacity:.1;font-family:Georgia,serif;font-weight:900}
-.testi-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);background:#fff}
-.testi-stars{font-size:15px;letter-spacing:2px}
-.testi-text{font-size:14px;color:#374151;line-height:1.8;font-style:italic;flex:1}
-.testi-author{display:flex;align-items:center;gap:12px;border-top:1px solid var(--border);padding-top:14px;margin-top:auto}
-.testi-avatar{width:40px;height:40px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--blue),var(--teal));color:#fff;font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center}
-.testi-name{font-size:13.5px;font-weight:700;color:var(--navy)}
-.testi-place{font-size:12px;color:var(--muted)}
-.svc-bg{background:linear-gradient(160deg,#f4fdf7 0%,var(--green-fade) 100%)}
-.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
-.svc-card{background:var(--card);border-radius:var(--r);padding:32px 24px;box-shadow:var(--shadow);border:1px solid var(--border);text-align:center;transition:all .3s;position:relative;overflow:hidden}
-.svc-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--grad-blue-green);transform:scaleX(0);transition:transform .3s}
-.svc-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
-.svc-card:hover::after{transform:scaleX(1)}
-.svc-icon{width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto 18px}
-.svc-card h3{font-family:'Nunito',sans-serif;font-size:18px;font-weight:800;color:var(--navy);margin-bottom:8px}
-.svc-card p{font-size:13.5px;color:var(--muted)}
-.contact-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.ccard{background:var(--card);border-radius:var(--r);padding:28px 22px;box-shadow:var(--shadow);border:1px solid var(--border);text-align:center;transition:all .3s}
-.ccard:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
-.ccard-icon{width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 16px}
-.ccard h3{font-family:'Nunito',sans-serif;font-size:17px;font-weight:800;color:var(--navy);margin-bottom:8px}
-.ccard p{font-size:13px;color:var(--muted);word-break:break-word}
-.ccard a{color:inherit;text-decoration:none}
-.ccard a:hover{color:var(--blue)}
-.wave-top{width:100%;overflow:hidden;line-height:0;margin-bottom:-2px}
-.wave-top svg{display:block;width:100%}
-.wave-bot{width:100%;overflow:hidden;line-height:0;margin-top:-2px;transform:rotate(180deg)}
-.wave-bot svg{display:block;width:100%}
-.schol-hero{position:relative;min-height:320px;background:linear-gradient(135deg,#0a1628 0%,#0e3a6e 60%,#0891b2 100%);display:flex;align-items:center}
-.schol-hero-overlay{width:100%;padding:60px 0}
-.schol-hero-content{max-width:680px;color:#fff}
-.schol-hero-content h1{font-family:'Nunito',sans-serif;font-size:clamp(26px,4vw,46px);font-weight:900;line-height:1.15;margin-bottom:14px}
-.schol-hero-content p{font-size:clamp(14px,1.8vw,17px);opacity:.88;line-height:1.75;margin-bottom:20px}
-/* ====== SCHOLARSHIP EXPAND CARDS ====== */
-.schol-expand-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
-@media(max-width:680px){.schol-expand-grid{grid-template-columns:1fr}}
+@media(max-width:420px){.logo small{display:none}}
 
-.schol-exp-card{background:#fff;border:1.5px solid #e2e8f0;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px
-rgba(10,61,31,.07);transition:box-shadow .2s,border-color .2s}
-.schol-exp-card.open{box-shadow:0 6px 24px rgba(10,61,31,.13);border-color:#cbd5e1}
+/* views */
+.view{display:none}.view.active{display:block}
 
-.schol-exp-header{display:flex;align-items:center;gap:12px;padding:16px
-18px;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
-.schol-exp-header:hover .schol-exp-title{color:var(--blue)}
-.schol-exp-ic{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--navy),var(--blue));display:flex;align-items:center;justify-content:center;font-size:.9rem;color:#fff;flex-shrink:0}
-.schol-exp-title{font-family:'Nunito',sans-serif;font-size:14.5px;font-weight:800;color:var(--navy);flex:1;line-height:1.3}
-.schol-exp-arrow{width:28px;height:28px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform
-.3s,background .2s}
-.schol-exp-arrow i{color:#fff;font-size:.75rem;transition:transform .3s}
-.schol-exp-card.open .schol-exp-arrow{background:var(--navy)}
-.schol-exp-card.open .schol-exp-arrow i{transform:rotate(180deg)}
+/* hero */
+.hero{background:linear-gradient(180deg,#fff 0%,var(--blue-tint) 100%);padding:72px 0 64px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(36px,5.6vw,64px);font-weight:900;color:var(--blue);margin-bottom:12px;letter-spacing:-.5px}
+.hero h1 em{font-style:normal;color:var(--green-dark)}
+.hero .brand-phrase{font:700 17px 'Nunito',sans-serif;color:var(--green-dark);margin-bottom:14px}
+.hero p.lead{font-size:18px;color:var(--muted);max-width:540px;margin-bottom:28px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
+.hero-panel{background:#fff;border:1px solid var(--blue-line);border-radius:18px;padding:26px;box-shadow:0 14px 40px rgba(21,101,192,.12)}
+.hero-panel h2{font-size:18px;margin-bottom:14px}
+.hero-panel li{list-style:none;display:flex;gap:14px;align-items:center;padding:12px 0;border-top:1px solid var(--line);font-weight:500}
+.hero-panel li:first-of-type{border-top:0}
+.hero-panel li span{width:40px;height:40px;border-radius:10px;background:var(--green-tint);color:var(--green-dark);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}.hero{padding:48px 0}}
 
-.schol-exp-body{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1)}
-.schol-exp-card.open .schol-exp-body{max-height:600px}
+/* stats */
+.stats{background:var(--blue);color:#fff;padding:28px 0}
+.stats .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:16px 64px;text-align:center}
+.stats strong{display:block;font:900 clamp(30px,5vw,42px) 'Nunito',sans-serif;line-height:1.1}
+.stats span{font-size:14px;opacity:.9}
 
-.schol-exp-inner{padding:0 18px 18px}
-.schol-exp-divider{height:1px;background:linear-gradient(90deg,var(--border),transparent);margin-bottom:14px}
+/* generic cards */
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:var(--shadow)}
+.ic{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px;background:var(--blue-tint);color:var(--blue)}
+.ic.g{background:var(--green-tint);color:var(--green-dark)}
+.card h3{font-size:18px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+.pillar{border-top:4px solid var(--blue)}.pillar:nth-child(even){border-top-color:var(--green)}
 
-.schol-about-label{font-size:12px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
-.schol-about-text{font-size:13.5px;color:#374151;line-height:1.75;margin-bottom:14px}
+/* what we do */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.tick{list-style:none;display:grid;gap:10px}
+.tick li{display:flex;gap:10px;align-items:flex-start}
+.tick li i{color:var(--green-dark);margin-top:5px}
 
-.schol-elig-label{font-size:12px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
-.schol-elig-text{font-size:13px;color:#4b5563;line-height:1.7;margin-bottom:14px}
+/* courses */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.tab{padding:10px 16px;border-radius:100px;border:1.5px solid var(--blue-line);background:#fff;color:var(--blue-dark);font:600 14px 'Outfit',sans-serif;cursor:pointer;min-height:44px}
+.tab:hover{border-color:var(--blue)}
+.tab[aria-selected=true]{background:var(--blue);color:#fff;border-color:var(--blue)}
+.cgrp{margin-bottom:26px}
+.cgrp h3{font-size:17px;margin-bottom:12px;padding-left:12px;border-left:4px solid var(--green)}
+.citems{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px}
+.citem{padding:10px 14px;border-radius:8px;font-size:14px;font-weight:500;background:var(--blue-tint);border-left:3px solid var(--blue);color:var(--ink)}
+.citem.g{background:var(--green-tint);border-left-color:var(--green)}
+.note{font-size:13.5px;color:var(--muted);margin-top:14px}
 
-.schol-benefit-box{background:var(--green-fade);border-left:3px solid var(--green-dark);border-radius:8px;padding:10px
-14px;display:flex;align-items:flex-start;gap:8px}
-.schol-benefit-box i{color:var(--green-dark);margin-top:2px;flex-shrink:0;font-size:.9rem}
-.schol-benefit-label{font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--green-dark);margin-bottom:3px}
-.schol-benefit-text{font-size:13px;color:#166534;line-height:1.6}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px 18px;counter-increment:s}
+.step::before{content:counter(s);display:flex;width:38px;height:38px;border-radius:50%;background:var(--blue);color:#fff;font:800 17px 'Nunito',sans-serif;align-items:center;justify-content:center;margin-bottom:12px}
+.step:nth-child(even)::before{background:var(--green-dark)}
+.step h3{font-size:16px;margin-bottom:4px}.step p{font-size:14px;color:var(--muted)}
 
-/* ====== END SCHOLARSHIP EXPAND CARDS ====== */
-.schol-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.schol-step{background:#fff;border-radius:var(--r);padding:28px 22px;box-shadow:var(--shadow);border:1px solid var(--border);display:flex;gap:18px;align-items:flex-start;transition:all .3s}
-.schol-step:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
-.schol-step-ic{width:52px;height:52px;border-radius:14px;flex-shrink:0;background:linear-gradient(135deg,var(--navy),var(--blue));display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:#fff}
-.schol-step h3{font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:var(--navy);margin-bottom:6px}
-.schol-step p{font-size:13px;color:var(--muted);line-height:1.7}
-.schol-faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.schol-faq{background:var(--off);border-radius:var(--r);padding:24px 22px;border:1px solid var(--border);border-left:4px solid var(--gold);transition:all .25s}
-.schol-faq:hover{background:#fff;box-shadow:var(--shadow);transform:translateY(-3px)}
-.schol-faq h4{font-family:'Nunito',sans-serif;font-size:15px;font-weight:800;color:var(--blue);margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.schol-faq h4 i{color:var(--gold)}
-.schol-faq p{font-size:13.5px;color:#374151;line-height:1.75}
-.schol-cta{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%);padding:64px 20px;color:#fff}
-.schol-cta h2{font-family:'Nunito',sans-serif;font-size:clamp(24px,4vw,38px);font-weight:900;margin-bottom:12px}
-.schol-cta p{font-size:15px;opacity:.85;max-width:520px;margin:0 auto;line-height:1.75}
-footer{background:linear-gradient(135deg,#071a0c,var(--navy));color:rgba(255,255,255,.8);padding:48px 20px 28px}
-.footer-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:start}
-@media(max-width:600px){.footer-inner{grid-template-columns:1fr}}
-.footer-brand img{height:52px;width:auto;margin-bottom:12px}
-.footer-brand h3{font-family:'Nunito',sans-serif;font-size:17px;font-weight:900;color:#fff;margin-bottom:4px}
-.footer-brand p{font-size:12.5px;opacity:.65}
-.footer-links{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
-@media(max-width:600px){.footer-links{align-items:flex-start}}
-.footer-links a{color:rgba(255,255,255,.6);text-decoration:none;font-size:13px;transition:color .2s}
-.footer-links a:hover{color:#fff}
-.footer-copy{max-width:1280px;margin:28px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);text-align:center;font-size:12px;color:rgba(255,255,255,.4)}
-.wa-fab{position:fixed;bottom:24px;right:20px;z-index:400;background:linear-gradient(135deg,#25d366,#1ebe59);color:#fff;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;font-size:1.7rem;box-shadow:0 6px 24px rgba(37,211,102,.4);text-decoration:none;transition:transform .2s,box-shadow .2s}
-.wa-fab:hover{transform:scale(1.1) translateY(-2px);box-shadow:0 10px 30px rgba(37,211,102,.5)}
-.bg-white{background:#fff}
-.bg-off{background:var(--off)}
-.bg-navy{background:var(--navy)}
-@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-.fade-up{animation:fadeUp .6s ease both}
-@media(max-width:640px){.sec{padding:56px 0}.form-card{padding:24px 20px}.team-grid{grid-template-columns:repeat(2,1fr);gap:14px}}
+/* founder & team */
+.founder{display:grid;grid-template-columns:200px 1fr;gap:32px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px;box-shadow:var(--shadow);margin-bottom:40px}
+.avatar{width:160px;height:160px;border-radius:50%;overflow:hidden;background:var(--blue-tint);border:4px solid var(--green-line);display:flex;align-items:center;justify-content:center;font:900 40px 'Nunito',sans-serif;color:var(--blue);margin:0 auto}
+.avatar img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.founder h3{font-size:24px}
+.qual{color:var(--green-dark);font-weight:600;font-size:14px;margin:2px 0 14px}
+.founder p{color:#33425a;margin-bottom:10px;font-size:15px}
+blockquote{border-left:4px solid var(--green);background:var(--green-tint);padding:12px 16px;border-radius:8px;font-style:italic;margin:14px 0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.tags span{background:var(--blue-tint);color:var(--blue-dark);padding:5px 12px;border-radius:100px;font-size:13px;font-weight:600}
+@media(max-width:700px){.founder{grid-template-columns:1fr;padding:22px}}
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px}
+.member{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px 14px;text-align:center}
+.member .avatar{width:104px;height:104px;font-size:28px;margin-bottom:12px}
+.member h4{font-size:15px}.member p{font-size:13px;color:var(--muted);margin:2px 0 8px}
+.role{display:inline-block;font-size:12px;font-weight:600;padding:4px 10px;border-radius:100px;background:var(--blue-tint);color:var(--blue-dark)}
+.role.g{background:var(--green-tint);color:var(--green-dark)}
+.guest{background:linear-gradient(135deg,var(--blue),var(--blue-dark));color:#fff;border:0}
+.guest h4,.guest p{color:#fff}.guest .avatar{background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.4);color:#fff}
+
+/* scholarships */
+.page-hero{background:linear-gradient(135deg,var(--blue-dark),var(--blue));color:#fff;padding:64px 0}
+.page-hero h1{color:#fff;font-size:clamp(28px,4.4vw,46px);font-weight:900;margin-bottom:10px}
+.page-hero p{max-width:640px;opacity:.93;font-size:17px}
+.verify{background:var(--green-tint);border:1px solid var(--green-line);border-radius:10px;padding:14px 18px;margin-bottom:28px;font-size:14.5px;display:flex;gap:12px}
+.verify i{color:var(--green-dark);margin-top:4px}
+.acc{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;align-items:start}
+@media(max-width:700px){.acc{grid-template-columns:1fr}}
+.acc-item{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.acc-item.open{border-color:var(--blue-line);box-shadow:var(--shadow)}
+.acc-btn{width:100%;display:flex;align-items:center;gap:12px;padding:15px 16px;background:none;border:0;text-align:left;cursor:pointer;font:700 15px 'Nunito',sans-serif;color:var(--blue-dark);min-height:56px}
+.acc-btn .ic{margin:0;width:38px;height:38px;font-size:15px;flex-shrink:0}
+.acc-btn .t{flex:1}
+.acc-btn .chev{transition:transform .25s;color:var(--green-dark)}
+.acc-item.open .chev{transform:rotate(180deg)}
+.acc-body{display:none;padding:0 16px 16px;font-size:14.5px}
+.acc-item.open .acc-body{display:block}
+.acc-body h4{font-size:12.5px;color:var(--blue);margin:10px 0 3px}
+.acc-body p{color:#33425a}
+.benefit{background:var(--green-tint);border-left:3px solid var(--green);padding:9px 12px;border-radius:6px;margin-top:10px}
+.acc-body .src{display:inline-block;margin-top:10px;font-weight:600;font-size:14px}
+.acc-body .lv{display:block;font-size:12.5px;color:var(--muted);margin-top:6px}
+
+/* knowledge hub */
+.kh{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.kh article{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:var(--shadow)}
+.kh h3{font-size:19px;margin-bottom:8px}
+.kh p,.kh li{font-size:15px;color:#33425a}
+.kh ul{padding-left:18px;margin-top:8px;display:grid;gap:4px}
+.kh .tag{display:inline-block;font-size:12.5px;font-weight:600;color:var(--green-dark);background:var(--green-tint);padding:3px 10px;border-radius:100px;margin-bottom:10px}
+
+/* faq */
+details{background:#fff;border:1px solid var(--line);border-radius:var(--r);margin-bottom:10px}
+summary{cursor:pointer;padding:16px 18px;font:700 16px 'Nunito',sans-serif;color:var(--blue-dark);list-style:none;display:flex;justify-content:space-between;gap:12px;min-height:56px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';font-size:22px;color:var(--green-dark);font-weight:700}
+details[open] summary::after{content:'–'}
+details p{padding:0 18px 16px;color:#33425a;font-size:15px}
+.faq{max-width:820px;margin:0 auto}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+.cline{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line)}
+.cline .ic{margin:0;flex-shrink:0;width:42px;height:42px;font-size:17px}
+.cline b{display:block;font-size:13px;color:var(--muted);font-weight:600}
+.cline span,.cline a{font-size:15px;font-weight:500;color:var(--ink);word-break:break-word}
+.form-card{background:#fff;border:1px solid var(--blue-line);border-radius:16px;padding:30px;box-shadow:0 12px 36px rgba(21,101,192,.1)}
+.form-card h3{font-size:22px;margin-bottom:4px}
+.form-card>p{color:var(--muted);font-size:14px;margin-bottom:18px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+@media(max-width:520px){.frow{grid-template-columns:1fr}.form-card{padding:22px 18px}}
+label{display:block;font-size:13.5px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.fi{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;font:16px 'Outfit',sans-serif;background:#fff;color:var(--ink);margin-bottom:14px;min-height:48px}
+.fi:focus{border-color:var(--blue);outline:3px solid rgba(21,101,192,.18)}
+textarea.fi{min-height:90px;resize:vertical}
+.hp{position:absolute;left:-9999px;height:0;width:0;overflow:hidden}
+#form-msg{display:none;padding:12px 16px;border-radius:10px;font-weight:600;font-size:14px;margin-bottom:14px}
+#form-msg.ok{display:block;background:var(--green-tint);color:#0f5f2c;border:1.5px solid var(--green-line)}
+#form-msg.err{display:block;background:#fdecec;color:#8a1c1c;border:1.5px solid #f2b8b8}
+.form-btns{display:flex;flex-wrap:wrap;gap:10px}.form-btns .btn{flex:1;min-width:180px}
+
+/* footer */
+footer{background:var(--ink);color:rgba(255,255,255,.82);padding:48px 0 24px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr;gap:32px}
+@media(max-width:700px){.foot{grid-template-columns:1fr}}
+footer h3{color:#fff;font-size:18px;margin-bottom:4px}
+footer h3 i{font-style:normal;color:#6fd592}
+footer p{font-size:13.5px;margin-top:4px}
+footer .tagline{color:#6fd592;font-weight:600;margin-bottom:10px}
+.flinks{display:grid;grid-template-columns:1fr 1fr;gap:6px 20px;align-content:start}
+.flinks a{color:rgba(255,255,255,.75);text-decoration:none;font-size:14px}.flinks a:hover{color:#fff}
+.copy{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:12.5px;color:rgba(255,255,255,.55);text-align:center}
+
+/* sticky CTA */
+.sticky-cta{position:fixed;right:16px;bottom:16px;z-index:500;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.sticky-cta a{display:flex;align-items:center;gap:8px;border-radius:100px;text-decoration:none;font-weight:700;font-size:14.5px;padding:0 18px;height:50px;box-shadow:0 6px 20px rgba(15,27,51,.25)}
+.sticky-cta .wa{background:#1ea952;color:#fff}
+.sticky-cta .co{background:var(--blue);color:#fff}
+@media(max-width:600px){.sticky-cta{left:12px;right:12px;bottom:12px;flex-direction:row}.sticky-cta a{flex:1;justify-content:center;padding:0 10px}}
+@media(max-width:600px){body{padding-bottom:70px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
 <body>
 
 <header>
   <div class="hdr">
-    <a class="logo" href="#">
-      <img src="https://i.ibb.co/fdYb2ktk/logo.png" alt="Future Tech Logo">
-      <div class="logo-txt">
-        <h1>Future Tech Educational Guidance</h1>
-<p>A Unit of Future Tech Career Solutions Pvt Ltd &nbsp;|&nbsp; MSME Reg: TN-14-0051932</p>      </div>
+    <a class="logo" href="#home" aria-label="Future Tech Career Solutions – home">
+      <img src="https://i.ibb.co/fdYb2ktk/logo.png" alt="Future Tech logo" width="44" height="44">
+      <div><b>FUTURE <i>TECH</i></b><small>Career Solutions (OPC) Private Limited</small></div>
     </a>
-    <button class="ham" id="hamBtn" aria-label="Menu"><span></span><span></span><span></span></button>
-    <nav id="mainNav">
-      <button onclick="showPage('home')" class="active-btn">Home</button>
-      <button onclick="showPage('about')">About</button>
-      <button onclick="showPage('services')">Services</button>
-      <button onclick="showPage('courses')">Courses</button>
-      <button onclick="showPage('contact')">Contact</button>
-      <button onclick="showPage('scholarship')">Scholarships</button>
-      <button onclick="showPage('apply')" class="nav-cta">Talk to Expert Now</button>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="nav" aria-label="Main">
+      <a href="#home" data-r="home">Home</a>
+      <a href="#about" data-r="about">About</a>
+      <a href="#services" data-r="services">Services</a>
+      <a href="#courses" data-r="courses">Courses</a>
+      <a href="#scholarships" data-r="scholarships">Scholarships</a>
+      <a href="#knowledge-hub" data-r="knowledge-hub">Knowledge Hub</a>
+      <a href="#contact" data-r="contact">Contact</a>
+      <a href="#contact" class="cta" data-r="cta">Free Counselling</a>
     </nav>
   </div>
 </header>
 
-<section id="home" class="page active">
-  <div class="slider">
-    <div class="slide active">
-      <div class="slide-inner">
-        <div class="slide-copy">
-          <div class="slide-tag"><i class="fas fa-star"></i> #1 Educational Guidance</div>
-          <h2>India's Digital <span>Career Guidance</span> & Admission Platform</h2>
-          <p class="slide-subtitle">Helping students choose the right course, college, and career through expert counselling and technology.</p>
-          <div class="slide-btns">
-            <button onclick="showPage('apply')" class="btn-hero btn-gold"><i class="fas fa-pen"></i> Admission Enquiry</button>
-            <button onclick="showPage('courses')" class="btn-hero btn-outline-navy"><i class="fas fa-search"></i> Explore Courses!</button>
+<main>
+<!-- ================= HOME ================= -->
+<div id="view-home" class="view active">
+
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 id="h1">Delivering Tomorrow’s <em>Guidance</em> Today!</h1>
+        <p class="lead">Personalised career, education and admission guidance to help students make informed decisions about courses, colleges and future opportunities.</p>
+        <div class="hero-btns">
+          <a class="btn btn-green" href="#contact"><i class="fas fa-comments"></i> Free Career Counselling</a>
+          <a class="btn btn-line" href="#courses"><i class="fas fa-search"></i> Explore Courses</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Guidance areas">
+        <h2>How we help students</h2>
+        <ul>
+          <li><span><i class="fas fa-compass"></i></span> Career guidance and counselling</li>
+          <li><span><i class="fas fa-graduation-cap"></i></span> Education and admission support</li>
+          <li><span><i class="fas fa-laptop-code"></i></span> Training and skill development</li>
+          <li><span><i class="fas fa-briefcase"></i></span> Employability support</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Highlights">
+    <div class="wrap">
+      <div><strong>15+</strong><span>Expert Advisors</span></div>
+      <div><strong>12+</strong><span>Course Categories</span></div>
+      <div><strong>6</strong><span>Service Areas</span></div>
+      <!-- ADMIN: add "5000+ Students Guided" here ONLY after management verification. Do not add "Partner Colleges" without a documented basis. -->
+    </div>
+  </section>
+
+  <section class="sec" id="what-we-do">
+    <div class="wrap two">
+      <div>
+        <h2 style="font-size:clamp(26px,3.6vw,38px);margin-bottom:12px">What we do</h2>
+        <p style="color:#33425a;margin-bottom:12px"><strong>Future Tech Career Solutions (OPC) Private Limited</strong> is an education and career-focused organisation. We help students make informed decisions about their academic journey, career pathways and future opportunities.</p>
+        <p style="color:#33425a">Through personalised guidance and structured support, we help students identify suitable courses, institutions and career pathways based on their interests, academic background and goals.</p>
+      </div>
+      <ul class="tick" aria-label="Our scope">
+        <li><i class="fas fa-check-circle"></i> Career guidance and counselling</li>
+        <li><i class="fas fa-check-circle"></i> Educational and admission guidance</li>
+        <li><i class="fas fa-check-circle"></i> Academic support</li>
+        <li><i class="fas fa-check-circle"></i> Training and skill development</li>
+        <li><i class="fas fa-check-circle"></i> Online and technology-enabled educational services</li>
+        <li><i class="fas fa-check-circle"></i> Employability-oriented support</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec alt" id="services">
+    <div class="wrap">
+      <div class="sec-head"><h2>Our six service areas</h2><p>Support at every stage, from choosing a course to preparing for work.</p></div>
+      <div class="grid g3" id="pillars"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="courses">
+    <div class="wrap">
+      <div class="sec-head"><h2>Course categories</h2><p>Choose a category to see the programmes we can guide you on.</p></div>
+      <div class="tabs" role="tablist" id="courseTabs" aria-label="Course categories"></div>
+      <div id="course-content" aria-live="polite"></div>
+      <p class="note">Course availability, duration and eligibility vary by institution and year. Speak to a counsellor for current details.</p>
+    </div>
+  </section>
+
+  <section class="sec alt-g" id="how-it-works">
+    <div class="wrap">
+      <div class="sec-head"><h2>How our guidance works</h2><p>Five simple steps from your first enquiry to admission support.</p></div>
+      <div class="steps">
+        <div class="step"><h3>Enquiry</h3><p>Send your details through the form or WhatsApp.</p></div>
+        <div class="step"><h3>Screening</h3><p>We understand your interests, marks and goals.</p></div>
+        <div class="step"><h3>Counselling</h3><p>A one-to-one session with an experienced advisor.</p></div>
+        <div class="step"><h3>Options</h3><p>Course and college options that suit your profile.</p></div>
+        <div class="step"><h3>Admission support</h3><p>Help with the admission process, step by step.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="why">
+    <div class="wrap">
+      <div class="sec-head"><h2>Why Future Tech</h2></div>
+      <div class="grid g4">
+        <div class="card"><div class="ic"><i class="fas fa-comments"></i></div><h3>Personalised guidance</h3><p>Advice shaped around each student’s strengths, interests and goals.</p></div>
+        <div class="card"><div class="ic g"><i class="fas fa-user-tie"></i></div><h3>Academic expertise</h3><p>A team with teaching, research and mentoring experience.</p></div>
+        <div class="card"><div class="ic"><i class="fas fa-sync-alt"></i></div><h3>Updated information</h3><p>We work to keep course and institution information current.</p></div>
+        <div class="card"><div class="ic g"><i class="fas fa-hands-helping"></i></div><h3>Support for families</h3><p>Students and parents are supported through the admission process.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="company">
+    <div class="wrap">
+      <div class="sec-head"><h2>Our company and leadership</h2><p>Guiding Today, Building Tomorrow — our commitment to students and families.</p></div>
+      <div class="founder">
+        <div class="avatar" id="founderAvatar"><img src="images/image1.jpg" alt="T.R. Arunprasand" onerror="this.parentNode.textContent='TA'"></div>
+        <div>
+          <h3>T.R. Arunprasand</h3>
+          <div class="qual">M.E., (Ph.D)</div>
+          <!-- ADMIN: add the confirmed public designation here once management approves it. -->
+          <p>T.R. Arunprasand brings a strong background in Mechanical Engineering and academic research, with over 10 years of experience in teaching, research and student mentoring. His expertise spans advanced manufacturing technologies, robotics, automation and additive manufacturing.</p>
+          <p>Our work focuses on career guidance, technology awareness and research-oriented learning, so students can prepare for a fast-changing technology landscape.</p>
+          <blockquote>The right guidance at the right time can transform a student’s future and contribute to building a skilled and innovative society.</blockquote>
+          <div class="tags"><span>Mechanical Engineering</span><span>Robotics &amp; Automation</span><span>Additive Manufacturing</span><span>Student Mentoring</span></div>
+        </div>
+      </div>
+      <p><a class="btn btn-line" href="#about">About the company</a></p>
+    </div>
+  </section>
+
+  <section class="sec" id="experts">
+    <div class="wrap">
+      <div class="sec-head"><h2>15+ Expert Advisors</h2><p>8 Career Advisors and 7 Guest Experts to guide you.</p></div>
+      <div class="team" id="team"></div>
+    </div>
+  </section>
+
+  <!-- Testimonials: intentionally removed. Per spec, restore only after authenticity and written permission are confirmed. -->
+
+  <section class="sec alt" id="scholarship-teaser">
+    <div class="wrap two">
+      <div>
+        <h2 style="font-size:clamp(26px,3.6vw,38px);margin-bottom:12px">Scholarship Information Portal</h2>
+        <p style="color:#33425a;margin-bottom:18px">Understand state and central scholarship schemes, who may be eligible, and where to apply on the official portal.</p>
+        <a class="btn btn-blue" href="#scholarships">View scholarship information</a>
+      </div>
+      <p class="note" style="margin:0;align-self:center">Scholarship details are shared for information and are checked against official sources. Rules, amounts and dates can change, so always confirm on the official portal before applying.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="knowledge-teaser">
+    <div class="wrap two">
+      <div>
+        <h2 style="font-size:clamp(26px,3.6vw,38px);margin-bottom:12px">Knowledge Hub</h2>
+        <p style="color:#33425a;margin-bottom:18px">Short guides on choosing courses, preparing documents and evaluating colleges.</p>
+        <a class="btn btn-line" href="#knowledge-hub">Read the guides</a>
+      </div>
+      <ul class="tick" style="align-self:center">
+        <li><i class="fas fa-book-open"></i> Choosing a course after 12th</li>
+        <li><i class="fas fa-book-open"></i> Diploma or degree: which path?</li>
+        <li><i class="fas fa-book-open"></i> Documents to keep ready</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec alt" id="faq">
+    <div class="wrap">
+      <div class="sec-head center"><h2>Frequently asked questions</h2></div>
+      <div class="faq" id="faqList"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="contact">
+    <div class="wrap">
+      <div class="sec-head"><h2>Contact us</h2><p>Tell us about your goals and our team will get back to you.</p></div>
+      <div class="contact-grid">
+        <div>
+          <div class="cline"><div class="ic g"><i class="fab fa-whatsapp"></i></div><div><b>WhatsApp / Phone</b><a href="https://wa.me/919789956246">+91 9789956246</a></div></div>
+          <div class="cline"><div class="ic"><i class="fas fa-envelope"></i></div><div><b>Email</b><a href="mailto:futureeducationalguidance25@gmail.com">futureeducationalguidance25@gmail.com</a></div></div>
+          <div class="cline"><div class="ic"><i class="fas fa-location-dot"></i></div><div><b>Registered office</b><span>13/141, Pillaiyar Kovil Street, Sandaipettai, Elachipalayam PO, Tiruchengode TK, Namakkal – 637202, Tamil Nadu, India.</span></div></div>
+          <div class="cline" id="branch"><div class="ic g"><i class="fas fa-building"></i></div><div><b>Branch office</b><span>No 42, Chekkumettu Street, SS Xerox Upstairs, Opp. Muthu Hospital, Kachirapalayam Road, Kallakurichi – 606213.</span></div></div>
+        </div>
+        <form class="form-card" id="leadForm" onsubmit="return submitForm(event)" novalidate>
+          <h3>Free career counselling</h3>
+          <p>Fields marked * are required.</p>
+          <div id="form-msg" role="status"></div>
+          <div class="frow">
+            <div><label for="f-name">Student name *</label><input id="f-name" class="fi" type="text" autocomplete="name" required></div>
+            <div><label for="f-parent">Parent / guardian name</label><input id="f-parent" class="fi" type="text"></div>
           </div>
-        </div>
-        <div class="slide-person">
-          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=420&q=80&auto=format&fit=crop&crop=top" alt="Engineering Student">
-        </div>
-      </div>
-      <div class="sdots">
-        <button class="sdot on" onclick="goSlide(0)"></button>
-        <button class="sdot" onclick="goSlide(1)"></button>
-        <button class="sdot" onclick="goSlide(2)"></button>
-      </div>
-    </div>
-    <div class="slide">
-      <div class="slide-inner">
-        <div class="slide-copy">
-          <div class="slide-tag"><i class="fas fa-heartbeat"></i> Medical Admissions</div>
-          <h2>Apply With <span>Confidence!!</span></h2>
-          <p class="slide-subtitle">Your one-stop platform to research, compare, and apply to 500+ colleges across Tamil Nadu.</p>
-          <div class="slide-btns">
-            <button onclick="showPage('apply')" class="btn-hero btn-gold"><i class="fas fa-pen"></i> Admission Enquiry</button>
-            <button onclick="showPage('courses')" class="btn-hero btn-outline-navy"><i class="fas fa-search"></i> Explore Courses!</button>
+          <div class="frow">
+            <div><label for="f-phone">WhatsApp / mobile *</label><input id="f-phone" class="fi" type="tel" inputmode="tel" autocomplete="tel" required></div>
+            <div><label for="f-email">Email</label><input id="f-email" class="fi" type="email" autocomplete="email"></div>
           </div>
-        </div>
-        <div class="slide-person">
-          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=420&q=80&auto=format&fit=crop&crop=top" alt="Medical Student">
-        </div>
-      </div>
-      <div class="sdots">
-        <button class="sdot" onclick="goSlide(0)"></button>
-        <button class="sdot on" onclick="goSlide(1)"></button>
-        <button class="sdot" onclick="goSlide(2)"></button>
-      </div>
-    </div>
-    <div class="slide">
-      <div class="slide-inner">
-        <div class="slide-copy">
-          <div class="slide-tag"><i class="fas fa-graduation-cap"></i> Free Career Guidance</div>
-          <h2>Shape Your <span>Future Career!</span></h2>
-          <p class="slide-subtitle">Your one-stop platform to research, compare, and apply to 500+ colleges across Tamil Nadu.</p>
-          <div class="slide-btns">
-            <button onclick="showPage('apply')" class="btn-hero btn-gold"><i class="fas fa-pen"></i> Admission Enquiry</button>
-            <button onclick="showPage('courses')" class="btn-hero btn-outline-navy"><i class="fas fa-search"></i> Explore Courses!</button>
+          <div class="frow">
+            <div><label for="f-class">Current class / qualification *</label><input id="f-class" class="fi" type="text" placeholder="e.g. 12th, Diploma, B.Sc" required></div>
+            <div><label for="f-marks">Marks / cut-off (if applicable)</label><input id="f-marks" class="fi" type="text"></div>
           </div>
-        </div>
-        <div class="slide-person">
-          <img src="https://picsum.photos/seed/career/420/400" alt="Students">
-        </div>
-      </div>
-      <div class="sdots">
-        <button class="sdot" onclick="goSlide(0)"></button>
-        <button class="sdot" onclick="goSlide(1)"></button>
-        <button class="sdot on" onclick="goSlide(2)"></button>
-      </div>
-    </div>
-  </div>
-
-  <div class="tieups-sec">
-    <div class="tieups-inner">
-      <div class="tieups-head">
-        <h2>🏫 Our College Tie-Ups</h2>
-        <p>Affiliated with top universities across Tamil Nadu — guiding students to their dream colleges</p>
-      </div>
-      <div class="tieups-grid">
-        <div class="tieup-card">
-          <h3>🏗️ Engineering Colleges</h3>
-          <ul><li>Affiliated with Anna University</li></ul>
-        </div>
-        <div class="tieup-card">
-          <h3>🏥 Medical &amp; Paramedical Colleges</h3>
-          <ul><li>Affiliated with Dr. M.G.R. Educational and Research Institute</li></ul>
-        </div>
-        <div class="tieup-card">
-          <h3>🎓 Arts &amp; Science Colleges</h3>
-          <ul>
-            <li>Periyar University</li>
-            <li>Bharathiar University</li>
-            <li>Bharathidasan University</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="stats">
-    <div class="stats-inner">
-      <div class="stat-item"><div class="stat-num">5000<span>+</span></div><div class="stat-lbl">Students Guided</div></div>
-      <div class="stat-item"><div class="stat-num">12<span>+</span></div><div class="stat-lbl">Course Categories</div></div>
-      <div class="stat-item"><div class="stat-num">500<span>+</span></div><div class="stat-lbl">Partner Colleges</div></div>
-      <div class="stat-item"><div class="stat-num">15<span>+</span></div><div class="stat-lbl">Expert Advisors</div></div>
-    </div>
-  </div>
-
-  <div class="sec bg-white">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Why Choose Us</span>
-        <h2>Reasons to <em>Trust Us</em></h2>
-        <p>We are committed to helping every student find the right path — with honesty, care, and expertise.</p>
-      </div>
-      <div class="feat-grid">
-        <div class="feat-card">
-          <div class="feat-icon" style="background:#eff6ff"><i class="fas fa-user-tie" style="color:var(--blue)"></i></div>
-          <h3>Experienced Academic Guidance</h3>
-          <p>Our team brings deep academic expertise to help students navigate course options, eligibility, and the right institutions across India.</p>
-        </div>
-        <div class="feat-card">
-          <div class="feat-icon" style="background:#f0fdf4"><i class="fas fa-comments" style="color:var(--green)"></i></div>
-          <h3>Personalised Career Counselling</h3>
-          <p>We provide one-on-one counselling tailored to each student's strengths, interests, and future career goals — not a one-size-fits-all approach.</p>
-        </div>
-        <div class="feat-card">
-          <div class="feat-icon" style="background:#fff7ed"><i class="fas fa-sync-alt" style="color:#ea580c"></i></div>
-          <h3>Updated Course Information</h3>
-          <p>We keep our course and institution database current so students always receive accurate and relevant information to make confident decisions.</p>
-        </div>
-        <div class="feat-card">
-          <div class="feat-icon" style="background:#fdf4ff"><i class="fas fa-hands-helping" style="color:#a855f7"></i></div>
-          <h3>Support Throughout Admission Process</h3>
-          <p>From the first enquiry to the final admission confirmation, we stay with students and parents every step of the way.</p>
-        </div>
-        <div class="feat-card">
-          <div class="feat-icon" style="background:#fefce8"><i class="fas fa-chart-line" style="color:#ca8a04"></i></div>
-          <h3>Focus on Future Career Opportunities</h3>
-          <p>We don't just help with admissions — we guide students toward courses and colleges that open the best career doors for their future.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="wave-top"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,0 C360,60 1080,60 1440,0 L1440,0 L0,0 Z" fill="#ffffff"/></svg></div>
-  <div class="courses-bg sec-sm">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow" style="background:rgba(255,255,255,.15);color:#fff">Explore</span>
-        <h2 style="color:#fff">Explore All <em style="color:var(--gold)">Courses!</em></h2>
-        <p style="color:rgba(255,255,255,.7)">Click on any category to view all available courses</p>
-      </div>
-      <div class="cat-grid">
-        <div class="cat-card" onclick="showPage('courses');showCourses('engineering')"><div class="cat-icon" style="background:#dbeafe"><i class="fas fa-cogs" style="color:#1d4ed8"></i></div><h3>Engineering</h3></div>
-        <div class="cat-card" onclick="showPage('courses');showCourses('medical')"><div class="cat-icon" style="background:#fee2e2"><i class="fas fa-user-md" style="color:#ef4444"></i></div><h3>Medical</h3></div>
-        <div class="cat-card" onclick="showPage('courses');showCourses('nursing')"><div class="cat-icon" style="background:#fce7f3"><i class="fas fa-heartbeat" style="color:#db2777"></i></div><h3>Nursing</h3></div>
-        <div class="cat-card" onclick="showPage('courses');showCourses('pharmacy')"><div class="cat-icon" style="background:#fef9c3"><i class="fas fa-pills" style="color:#ca8a04"></i></div><h3>Pharmacy</h3></div>
-        <div class="cat-card" onclick="showPage('courses');showCourses('allied')"><div class="cat-icon" style="background:#ede9fe"><i class="fas fa-stethoscope" style="color:#7c3aed"></i></div><h3>Allied Health</h3></div>
-        <div class="cat-card" onclick="showPage('courses');showCourses('therapy')"><div class="cat-icon" style="background:#fff7ed"><i class="fas fa-hand-holding-medical" style="color:#ea580c"></i></div><h3>Therapy</h3></div>
-        <div class="cat-card" onclick="showPage('courses');showCourses('arts')"><div class="cat-icon" style="background:#fef3c7"><i class="fas fa-book" style="color:#d97706"></i></div><h3>Arts &amp; Science</h3></div>
-        <div class="cat-card" onclick="showPage('courses');showCourses('management')"><div class="cat-icon" style="background:#d1fae5"><i class="fas fa-chart-line" style="color:#059669"></i></div><h3>Management</h3></div>
-        <div class="cat-card" onclick="showPage('courses');showCourses('law')"><div class="cat-icon" style="background:#f1f5f9"><i class="fas fa-balance-scale" style="color:#475569"></i></div><h3>Law</h3></div>
-        <div class="cat-card" onclick="showPage('courses');showCourses('education')"><div class="cat-icon" style="background:#e0e7ff"><i class="fas fa-chalkboard-teacher" style="color:#4f46e5"></i></div><h3>Education</h3></div>
-        <div class="cat-card" onclick="showPage('courses');showCourses('agriculture')"><div class="cat-icon" style="background:#dcfce7"><i class="fas fa-leaf" style="color:#16a34a"></i></div><h3>Agriculture</h3></div>
-        <div class="cat-card" onclick="showPage('courses');showCourses('diploma')"><div class="cat-icon" style="background:#fef3c7"><i class="fas fa-certificate" style="color:#d97706"></i></div><h3>Diploma</h3></div>
-      </div>
-    </div>
-  </div>
-  <div class="wave-bot"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,0 C360,60 1080,60 1440,0 L1440,0 L0,0 Z" fill="#f8faff"/></svg></div>
-
-  <div class="sec bg-white">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Student Testimonials</span>
-        <h2>What Our <em>Students Say</em></h2>
-        <p>Real words from students and parents who trusted us with their future.</p>
-      </div>
-      <div class="testi-grid">
-        <div class="testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div><p class="testi-text">"Future Tech Educational Guidance helped me choose the right engineering course. Their counselling was very clear and supportive. Because of their guidance I got admission in a good college."</p><div class="testi-author"><div class="testi-avatar">K</div><div><div class="testi-name">Karthik R</div><div class="testi-place">B.E Mechanical Engineering</div></div></div></div>
-        <div class="testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div><p class="testi-text">"I was confused about which course to choose after 12th. The counselling team explained all the options clearly and helped me select the best course. Thank you for the excellent guidance."</p><div class="testi-author"><div class="testi-avatar">P</div><div><div class="testi-name">Priya S</div><div class="testi-place">B.Sc Nursing</div></div></div></div>
-        <div class="testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div><p class="testi-text">"Very professional counselling and admission support. They guided me step by step until I secured my seat. Highly recommended for students after 12th."</p><div class="testi-author"><div class="testi-avatar">A</div><div><div class="testi-name">Arun Kumar</div><div class="testi-place">B.Tech Artificial Intelligence</div></div></div></div>
-        <div class="testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div><p class="testi-text">"Excellent career guidance service. The team explained all courses and colleges clearly. Because of them I joined the right course."</p><div class="testi-author"><div class="testi-avatar">K</div><div><div class="testi-name">Kavya M</div><div class="testi-place">B.Com</div></div></div></div>
-        <div class="testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div><p class="testi-text">"Very helpful counselling for diploma admission. The process was smooth and the team was very supportive throughout."</p><div class="testi-author"><div class="testi-avatar">V</div><div><div class="testi-name">Vignesh S</div><div class="testi-place">Diploma Mechanical Engineering</div></div></div></div>
-        <div class="testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div><p class="testi-text">"Future Tech Educational Guidance gave me proper guidance about courses and career opportunities. I am very thankful for their support."</p><div class="testi-author"><div class="testi-avatar">N</div><div><div class="testi-name">Nandhini R</div><div class="testi-place">B.Sc Computer Science</div></div></div></div>
-        <div class="testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div><p class="testi-text">"The team was very patient and explained each course in detail. I got clarity about my career within one session. Best guidance center for students after 12th."</p><div class="testi-author"><div class="testi-avatar">S</div><div><div class="testi-name">Suriya K</div><div class="testi-place">B.Tech Computer Science</div></div></div></div>
-        <div class="testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div><p class="testi-text">"As a parent I was worried about my daughter's admission. Future Tech handled everything professionally and got her into a good nursing college. Very trustworthy team."</p><div class="testi-author"><div class="testi-avatar">M</div><div><div class="testi-name">Meena P</div><div class="testi-place">Parent, Namakkal</div></div></div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="sec bg-off">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Simple Process</span>
-        <h2>How Our <em>System Works?</em></h2>
-        <p>5 easy steps from enquiry to admission — we make it simple for you.</p>
-      </div>
-      <div class="steps-wrap">
-        <div class="step"><div class="step-num">1</div><h3>Register Online / Enquiry</h3><p>Submit your details through our website or WhatsApp</p></div>
-        <div class="step"><div class="step-num">2</div><h3>Initial Screening & Analysis</h3><p>We understand your interests, marks, and goals</p></div>
-        <div class="step"><div class="step-num">3</div><h3>Expert Counselling Session</h3><p>Get personalised guidance from experienced advisors</p></div>
-        <div class="step"><div class="step-num">4</div><h3>College & Course Recommendation</h3><p>Data-driven suggestions for best-fit colleges</p></div>
-        <div class="step"><div class="step-num">5</div><h3>Admission Support</h3><p>End-to-end support until admission confirmation</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="courses" class="page">
-  <div class="courses-bg sec">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow" style="background:rgba(255,255,255,.15);color:#fff">All Categories</span>
-        <h2 style="color:#fff">Browse <em style="color:var(--gold)">Course Categories</em></h2>
-        <p style="color:rgba(255,255,255,.7)">Select a category to see all available courses</p>
-      </div>
-      <div class="cat-grid">
-        <div class="cat-card" onclick="showCourses('diploma')"><div class="cat-icon" style="background:#fef3c7"><i class="fas fa-certificate" style="color:#d97706"></i></div><h3>Diploma</h3></div>
-        <div class="cat-card" onclick="showCourses('engineering')"><div class="cat-icon" style="background:#dbeafe"><i class="fas fa-cogs" style="color:#1d4ed8"></i></div><h3>Engineering</h3></div>
-        <div class="cat-card" onclick="showCourses('medical')"><div class="cat-icon" style="background:#fee2e2"><i class="fas fa-user-md" style="color:#ef4444"></i></div><h3>Medical</h3></div>
-        <div class="cat-card" onclick="showCourses('nursing')"><div class="cat-icon" style="background:#fce7f3"><i class="fas fa-heartbeat" style="color:#db2777"></i></div><h3>Nursing</h3></div>
-        <div class="cat-card" onclick="showCourses('pharmacy')"><div class="cat-icon" style="background:#fef9c3"><i class="fas fa-pills" style="color:#ca8a04"></i></div><h3>Pharmacy</h3></div>
-        <div class="cat-card" onclick="showCourses('allied')"><div class="cat-icon" style="background:#ede9fe"><i class="fas fa-stethoscope" style="color:#7c3aed"></i></div><h3>Allied Health</h3></div>
-        <div class="cat-card" onclick="showCourses('therapy')"><div class="cat-icon" style="background:#fff7ed"><i class="fas fa-hand-holding-medical" style="color:#ea580c"></i></div><h3>Therapy</h3></div>
-        <div class="cat-card" onclick="showCourses('arts')"><div class="cat-icon" style="background:#fef9c3"><i class="fas fa-book" style="color:#ca8a04"></i></div><h3>Arts &amp; Science</h3></div>
-        <div class="cat-card" onclick="showCourses('management')"><div class="cat-icon" style="background:#d1fae5"><i class="fas fa-chart-line" style="color:#059669"></i></div><h3>Management</h3></div>
-        <div class="cat-card" onclick="showCourses('law')"><div class="cat-icon" style="background:#f1f5f9"><i class="fas fa-balance-scale" style="color:#475569"></i></div><h3>Law</h3></div>
-        <div class="cat-card" onclick="showCourses('education')"><div class="cat-icon" style="background:#e0e7ff"><i class="fas fa-chalkboard-teacher" style="color:#4f46e5"></i></div><h3>Education</h3></div>
-        <div class="cat-card" onclick="showCourses('agriculture')"><div class="cat-icon" style="background:#dcfce7"><i class="fas fa-leaf" style="color:#16a34a"></i></div><h3>Agriculture</h3></div>
-      </div>
-      <div id="course-content"></div>
-    </div>
-  </div>
-</section>
-
-<section id="apply" class="page sec bg-off">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Get Started</span>
-      <h2>Apply for <em>Free Counseling</em></h2>
-      <p>Fill in your details and our team will reach out to guide you personally.</p>
-    </div>
-    <div class="apply-wrap">
-      <div class="apply-info">
-        <h2>Let's Build Your Future Together</h2>
-        <p>Our expert advisors are ready to help you choose the right course, the right college, and the right career path. Reach us directly:</p>
-        <div class="contact-pill">
-          <div class="cp-icon" style="background:#dcfce7"><i class="fab fa-whatsapp" style="color:#16a34a"></i></div>
-          <div><div class="cp-label">WhatsApp</div><div class="cp-val">+91 9789956246</div></div>
-        </div>
-        <div class="contact-pill">
-          <div class="cp-icon" style="background:#dbeafe"><i class="fas fa-phone" style="color:var(--blue)"></i></div>
-          <div><div class="cp-label">Phone</div><div class="cp-val">+91 9789956246</div></div>
-        </div>
-        <div class="contact-pill">
-          <div class="cp-icon" style="background:#eff6ff"><i class="fas fa-envelope" style="color:var(--blue)"></i></div>
-          <div><div class="cp-label">Email</div><div class="cp-val" style="font-size:12px">futureeducationalguidance25@gmail.com</div></div>
-        </div>
-      </div>
-      <div class="form-card">
-        <h3>Student Application Form</h3>
-<!-- Status message -->
-        <div id="form-msg"></div>
-        <div class="frow">
-          <input id="f-name" class="finput" required placeholder="Full Name" type="text" autocomplete="name">
-          <input id="f-phone" class="finput" required placeholder="Phone Number" type="tel" autocomplete="tel">
-        </div>
-        <input id="f-email" class="finput" required placeholder="Email Address" type="email" autocomplete="email">
-        <input id="f-city" class="finput" required placeholder="City / District" type="text" autocomplete="address-level2">
-        <select id="f-course" class="finput">
-          <option value="">Select Course Category</option>
-          <option>Diploma</option><option>Engineering</option><option>Medical</option>
-          <option>Nursing</option><option>Pharmacy</option><option>Allied Health</option>
-          <option>Therapy</option><option>Arts &amp; Science</option><option>Management</option>
-          <option>Law</option><option>Education</option><option>Agriculture</option><option>Others</option>
-        </select>
-        <textarea id="f-msg" class="finput" maxlength="250" placeholder="Message (Optional – Max 250 chars)"></textarea>
-        <!-- Single Submit Button -->
-        <button type="button" class="btn-submit btn-submit-main" id="submitBtn" onclick="submitForm()">
-          <i class="fas fa-paper-plane"></i> Submit Application
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="page">
-  <div class="sec bg-white">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">About Us</span>
-        <h2>Who We <em>Are</em></h2>
-      </div>
-      <div class="about-body">
-        <p>Future Tech Educational Guidance is a student-focused educational consultancy dedicated to guiding students toward the right academic and career pathways. Our mission is to help students make informed decisions about their future through reliable guidance, counselling, and support.</p>
-        <p>We provide expert advice for students who are planning to pursue higher education in fields such as Engineering, Technology, Polytechnic, Skill Development, and emerging career domains. Our goal is to bridge the gap between students' aspirations and the right educational opportunities.</p>
-        <p>With strong academic expertise and industry awareness, we assist students in understanding various courses, career prospects, and institutional options available across India. We believe that choosing the right course and institution is one of the most important decisions in a student's life, and our guidance helps them make that decision with confidence.</p>
-        <p>At Future Tech Educational Guidance, we focus on personalized counselling, providing students with clear information about courses, eligibility, career scope, and future opportunities. We are committed to supporting students and parents throughout the admission and career planning process.</p>
-        <p class="about-vision"><i class="fas fa-lightbulb"></i> Our vision is to empower students with knowledge, clarity, and direction so they can build a successful and meaningful future.</p>
-      </div>
-      <div class="why-box">
-        <div class="why-title"><i class="fas fa-check-circle"></i> Why Choose Us</div>
-        <div class="why-list">
-          <div class="why-item"><i class="fas fa-check"></i> Experienced Academic Guidance</div>
-          <div class="why-item"><i class="fas fa-check"></i> Personalised Career Counselling</div>
-          <div class="why-item"><i class="fas fa-check"></i> Updated Course Information</div>
-          <div class="why-item"><i class="fas fa-check"></i> Support Throughout Admission Process</div>
-          <div class="why-item"><i class="fas fa-check"></i> Focus on Future Career Opportunities</div>
-        </div>
-      </div>
-      <div class="about-grid" style="margin-top:48px">
-        <div class="about-card"><div class="about-ic" style="background:#eff6ff"><i class="fas fa-bullseye" style="color:var(--blue)"></i></div><div><h3>Our Mission</h3><p>To help students make informed decisions about their future through reliable guidance, counselling, and support — bridging the gap between aspirations and the right educational opportunities.</p></div></div>
-        <div class="about-card"><div class="about-ic" style="background:#f0fdf4"><i class="fas fa-eye" style="color:var(--green)"></i></div><div><h3>Our Vision</h3><p>To empower students with knowledge, clarity, and direction so they can build a successful and meaningful future with full confidence in their chosen path.</p></div></div>
-        <div class="about-card"><div class="about-ic" style="background:#fdf4ff"><i class="fas fa-user-graduate" style="color:#a855f7"></i></div><div><h3>Our Approach</h3><p>We focus on personalized counselling — giving students clear information about courses, eligibility, career scope, and future opportunities based on their individual strengths.</p></div></div>
-      </div>
-    </div>
-  </div>
-
-    <div class="sec bg-off">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Our People</span>
-        <h2>Meet Our <em>Leadership Team</em></h2>
-        <p>Dedicated professionals committed to shaping your future.</p>
-      </div>
-
-      <div class="founder-card">
-        <div class="founder-left">
-          <div class="founder-avatar" style="overflow:hidden;padding:0"><img src="images/image1.jpg" alt="T.R. Arunprasand" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%"></div>
-          <div class="founder-badge-wrap">
-            <span class="founder-badge"><i class="fas fa-crown"></i> Founder &amp; Managing Director</span>
+          <div class="frow">
+            <div><label for="f-course">Interested course</label>
+              <select id="f-course" class="fi"><option value="">Select a category</option></select></div>
+            <div><label for="f-loc">Preferred location</label><input id="f-loc" class="fi" type="text" placeholder="City / district"></div>
           </div>
-        </div>
-        <div class="founder-right">
-          <div class="founder-name">T.R. Arunprasand</div>
-          <div class="founder-qual">M.E., (Ph.D)</div>
-          <div class="founder-bio">
-            <p>T.R. Arunprasand is the Founder and Managing Director of Future Tech Educational Guidance, an initiative dedicated to empowering students with the right academic direction and career opportunities in emerging technologies.</p>
-            <p>With a strong background in Mechanical Engineering and academic research, he brings over <strong>10 years of experience</strong> in teaching, research, and student mentoring. His expertise spans advanced manufacturing technologies, robotics, automation, and additive manufacturing.</p>
-            <p>Through Future Tech Educational Guidance, he aims to support students in identifying the right academic pathways, higher education opportunities, and skill-based training programs that align with future industry demands.</p>
-            <p>Under his leadership, the organization focuses on career guidance, technology awareness, and research-oriented learning, enabling students to prepare for the rapidly evolving global technology landscape.</p>
-            <div class="founder-quote"><i class="fas fa-quote-left"></i> The right guidance at the right time can transform a student's future and contribute to building a skilled and innovative society.</div>
-          </div>
-          <div class="founder-tags">
-            <span><i class="fas fa-cog"></i> Mechanical Engineering</span>
-            <span><i class="fas fa-robot"></i> Robotics &amp; Automation</span>
-            <span><i class="fas fa-cubes"></i> Additive Manufacturing</span>
-            <span><i class="fas fa-flask"></i> Academic Research</span>
-            <span><i class="fas fa-graduation-cap"></i> Student Mentoring</span>
-          </div>
-        </div>
+          <label for="f-type">Guidance type</label>
+          <select id="f-type" class="fi">
+            <option value="">Select guidance type</option>
+            <option>Admission &amp; Education Guidance</option>
+            <option>Career Guidance &amp; Counselling</option>
+            <option>Training &amp; Skill Development</option>
+            <option>Tuition &amp; Academic Support</option>
+            <option>Placement &amp; Employability Support</option>
+            <option>Scholarship Information</option>
+          </select>
+          <label for="f-msg">Message</label>
+          <textarea id="f-msg" class="fi" maxlength="250" placeholder="Anything you want us to know (max 250 characters)"></textarea>
+          <div class="hp" aria-hidden="true"><label for="f-web">Leave this field empty</label><input id="f-web" type="text" tabindex="-1" autocomplete="off"></div>
+          <div class="form-btns"><button type="submit" class="btn btn-blue" id="submitBtn"><i class="fas fa-paper-plane"></i> Request counselling</button></div>
+        </form>
       </div>
+    </div>
+  </section>
+</div>
 
-      <div class="team-subhead">Career Advisors</div>
-      <div class="team-grid">
-        <div class="team-card">
-          <div class="team-img" style="border-radius:50%;overflow:hidden;width:130px;height:130px;margin:20px auto 0;border:3px solid #c6ecd4;box-shadow:0 4px 16px rgba(10,61,31,.15)"><img src="images/image2.jpg" alt="A. Poulin Mary" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top center"></div>
-          <div class="team-body"><h4>A. POULIN MARY</h4><p class="team-qual">B.A., B.Ed.</p><span class="team-badge badge-senior">Senior Career Advisor cum Operations Manager</span></div>
-        </div>
-        <div class="team-card">
-          <div class="team-img"><img src="https://i.ibb.co/0VZvdNz7" alt="T. Yogeshwaran" loading="lazy"></div>
-          <div class="team-body"><h4>T. YOGESHWARAN</h4><p class="team-qual">B.E (Agri Eng)., M.E (Energy Eng).</p><span class="team-badge badge-advisor">Career Advisor</span></div>
-        </div>
-        <div class="team-card">
-          <div class="team-img" style="border-radius:50%;overflow:hidden;width:130px;height:130px;margin:20px auto 0;border:3px solid #c6ecd4;box-shadow:0 4px 16px rgba(10,61,31,.15)"><img src="images/image3.jpg" alt="M. Nasima Banu" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top center"></div>
-          <div class="team-body"><h4>M. NASIMA BANU</h4><p class="team-qual">B.Com (CA).</p><span class="team-badge badge-advisor">Career Advisor</span></div>
-        </div>
-        <div class="team-card">
-          <div class="team-img" style="border-radius:50%;overflow:hidden;width:130px;height:130px;margin:20px auto 0;border:3px solid #c6ecd4;box-shadow:0 4px 16px rgba(10,61,31,.15)"><img src="images/image4.jpg" alt="K. Kalaiyarasi" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top center"></div>
-          <div class="team-body"><h4>K. KALAIYARASI</h4><p class="team-qual">B.A., B.Ed.</p><span class="team-badge badge-advisor">Career Advisor</span></div>
-        </div>
-        <div class="team-card">
-          <div class="team-img" style="border-radius:50%;overflow:hidden;width:130px;height:130px;margin:20px auto 0;border:3px solid #c6ecd4;box-shadow:0 4px 16px rgba(10,61,31,.15)"><img src="images/image5.jpg" alt="R. Rajapriya" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top center"></div>
-          <div class="team-body"><h4>R. RAJAPRIYA</h4><p class="team-qual">M.Com.</p><span class="team-badge badge-advisor">Career Advisor</span></div>
-        </div>
-        <div class="team-card">
-          <div class="team-img" style="border-radius:50%;overflow:hidden;width:130px;height:130px;margin:20px auto 0;border:3px solid #c6ecd4;box-shadow:0 4px 16px rgba(10,61,31,.15)"><img src="images/image6.jpg" alt="P. Janagi" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top center"></div>
-          <div class="team-body"><h4>P. JANAGI</h4><p class="team-qual">B.A., B.Ed.</p><span class="team-badge badge-advisor">Career Advisor</span></div>
-        </div>
-        <div class="team-card">
-          <div class="team-img" style="border-radius:50%;overflow:hidden;width:130px;height:130px;margin:20px auto 0;border:3px solid #c6ecd4;box-shadow:0 4px 16px rgba(10,61,31,.15)"><img src="images/image7.jpg" alt="E. Jayamani" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top center"></div>
-          <div class="team-body"><h4>E. JAYAMANI</h4><p class="team-qual">B.A., B.Ed.</p><span class="team-badge badge-advisor">Career Advisor</span></div>
-        </div>
-        <div class="team-card">
-          <div class="team-img" style="border-radius:50%;overflow:hidden;width:130px;height:130px;margin:20px auto 0;border:3px solid #c6ecd4;box-shadow:0 4px 16px rgba(10,61,31,.15)"><img src="images/image8.jpg" alt="C. Latha" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top center"></div>
-          <div class="team-body"><h4>C. LATHA</h4><p class="team-qual">M.A., B.Ed.</p><span class="team-badge badge-advisor">Career Advisor</span></div>
+<!-- ================= ABOUT ================= -->
+<div id="view-about" class="view">
+  <section class="page-hero"><div class="wrap"><h1>About Future Tech Career Solutions</h1><p>Delivering Tomorrow’s Guidance Today!</p></div></section>
+  <section class="sec">
+    <div class="wrap two">
+      <div>
+        <p style="color:#33425a;margin-bottom:14px"><strong>FUTURE TECH CAREER SOLUTIONS (OPC) PRIVATE LIMITED</strong> is an education and career-focused organisation dedicated to helping students make informed decisions about their academic journey, career pathways and future opportunities.</p>
+        <p style="color:#33425a;margin-bottom:14px">The company provides career guidance and counselling, educational and admission guidance, academic support, training and skill development, online and technology-enabled educational services, and employability-oriented support.</p>
+        <p style="color:#33425a">Through personalised guidance and structured support, we help students identify suitable courses, institutions and career pathways based on their interests, academic background and future goals.</p>
+      </div>
+      <div>
+        <p style="color:#33425a;margin-bottom:14px">We also work towards collaboration with schools, colleges, universities, corporates, government bodies and other organisations for educational initiatives, career development, placement assistance, industry–academia interaction and skill-development activities.</p>
+        <blockquote>Guiding Today, Building Tomorrow</blockquote>
+        <div class="card" style="margin-top:16px">
+          <h3>Company details</h3>
+          <p>CIN: U85500TZ2026OPC040738<br>Date of incorporation: 08 September 2026<br>Udyam Registration: UDYAM-TN-14-0116936</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="services" class="page svc-bg sec">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">What We Offer</span>
-      <h2>Our <em>Services</em></h2>
-      <p>Comprehensive support for every stage of your educational journey.</p>
+  </section>
+  <section class="sec alt">
+    <div class="wrap grid g3">
+      <div class="card"><div class="ic"><i class="fas fa-bullseye"></i></div><h3>Our mission</h3><p>To help students make informed decisions about their future through reliable guidance, counselling and support.</p></div>
+      <div class="card"><div class="ic g"><i class="fas fa-eye"></i></div><h3>Our vision</h3><p>To empower students with knowledge, clarity and direction so they can build a successful and meaningful future.</p></div>
+      <div class="card"><div class="ic"><i class="fas fa-user-graduate"></i></div><h3>Our approach</h3><p>Personalised counselling with clear information on courses, eligibility, career scope and future opportunities.</p></div>
     </div>
-    <div class="svc-grid">
-      <div class="svc-card"><div class="svc-icon" style="background:#eff6ff"><i class="fas fa-chalkboard-teacher" style="color:var(--blue)"></i></div><h3>Tuition for School Students</h3><p>Personalized tuition sessions to improve academic performance, build confidence, and develop study skills.</p></div>
-      <div class="svc-card"><div class="svc-icon" style="background:#f0fdf4"><i class="fas fa-user-graduate" style="color:var(--green)"></i></div><h3>Career Guidance</h3><p>Expert one-on-one counseling to help students identify their strengths and choose the right career path.</p></div>
-      <div class="svc-card"><div class="svc-icon" style="background:#fef2f2"><i class="fas fa-book-open" style="color:#ef4444"></i></div><h3>Exam Preparation</h3><p>Targeted coaching for competitive exams, board exams, and scholarship tests to help students excel.</p></div>
-      <div class="svc-card"><div class="svc-icon" style="background:#fdf4ff"><i class="fas fa-comments" style="color:#a855f7"></i></div><h3>Soft Skills &amp; Personality</h3><p>Communication, leadership, and confidence training to prepare students for professional success.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="page sec bg-off">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Reach Us</span>
-      <h2>Get In <em>Touch</em></h2>
-      <p>We're here to answer all your questions. Reach out any time.</p>
-    </div>
-    <div class="contact-wrap">
-      <div class="ccard"><div class="ccard-icon" style="background:#dcfce7"><i class="fas fa-phone" style="color:var(--green)"></i></div><h3>Phone</h3><p>+91 9789956246</p></div>
-      <div class="ccard"><div class="ccard-icon" style="background:#dbeafe"><i class="fab fa-whatsapp" style="color:var(--green)"></i></div><h3>WhatsApp</h3><p>+91 9789956246</p></div>
-      <div class="ccard"><div class="ccard-icon" style="background:#eff6ff"><i class="fas fa-envelope" style="color:var(--blue)"></i></div><h3>Email</h3><p><a href="mailto:futureeducationalguidance25@gmail.com">futureeducationalguidance25@gmail.com</a></p></div>
-      <div class="ccard"><div class="ccard-icon" style="background:#fef2f2"><i class="fas fa-map-marker-alt" style="color:#ef4444"></i></div><h3>Head Office</h3><p>13/141 Pillaiyar Kovil Street, Sandaipettai, Elachipalayam PO, Tiruchengode TK, Namakkal DT – 637202</p></div>
-      <div class="ccard"><div class="ccard-icon" style="background:#fff7ed"><i class="fas fa-map-marker-alt" style="color:#ea580c"></i></div><h3>Branch Office</h3><p>No 42, Chekkumettu Street, SS Xerox Upstairs, Opp. Muthu Hospital, Kachirapalayam Road, Kallakurichi – 606213</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="scholarship" class="page">
-  <div class="schol-hero">
-    <div class="schol-hero-overlay">
-      <div class="wrap">
-        <div class="schol-hero-content">
-          <div class="slide-tag" style="margin-bottom:16px"><i class="fas fa-award"></i> Financial Support for Students</div>
-          <h1>Scholarship Information Portal</h1>
-          <p>Empowering dreams through financial support — your gateway to educational opportunities across Tamil Nadu &amp; India.</p>
-          <button onclick="showPage('apply')" class="btn-hero btn-solid" style="margin-top:8px"><i class="fas fa-pen"></i> Talk to Expert Now</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<div class="sec bg-white">
+  </section>
+  <section class="sec">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Must Know</span>
-        <h2>Game Changer <em>Schemes!</em></h2>
-        <p>Click on any scheme to learn more about eligibility and benefits.</p>
+      <div class="sec-head"><h2>Leadership and advisors</h2></div>
+      <div class="founder">
+        <div class="avatar"><img src="images/image1.jpg" alt="T.R. Arunprasand" onerror="this.parentNode.textContent='TA'"></div>
+        <div><h3>T.R. Arunprasand</h3><div class="qual">M.E., (Ph.D)</div>
+          <p>Mechanical Engineering and academic research background, with over 10 years of experience in teaching, research and student mentoring.</p>
+          <div class="tags"><span>Robotics &amp; Automation</span><span>Additive Manufacturing</span><span>Student Mentoring</span></div></div>
       </div>
-                         <div class="schol-expand-grid" id="scholGrid"></div>
-
+      <div class="team" id="team2"></div>
     </div>
-  </div>
+  </section>
+  <section class="sec alt-g"><div class="wrap" style="text-align:center"><h2 style="margin-bottom:14px">Ready to talk?</h2><a class="btn btn-green" href="#contact">Free Career Counselling</a></div></section>
+</div>
 
-  <div class="sec bg-off">
+<!-- ================= SCHOLARSHIPS ================= -->
+<div id="view-scholarships" class="view">
+  <section class="page-hero"><div class="wrap"><h1>Scholarship Information Portal</h1><p>Information on state and central scholarship schemes, with links to official sources where available.</p></div></section>
+  <section class="sec">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Step by Step</span>
-        <h2>Application <em>Process</em></h2>
-        <p>Follow these simple steps to apply for your chosen scholarship program.</p>
-      </div>
-      <div class="schol-steps">
-        <div class="schol-step"><div class="schol-step-ic"><i class="fas fa-clipboard-check"></i></div><div><h3>Check Eligibility</h3><p>Verify your eligibility criteria based on academic performance, income level, and specific scheme requirements.</p></div></div>
-        <div class="schol-step"><div class="schol-step-ic"><i class="fas fa-folder-open"></i></div><div><h3>Document Collection</h3><p>Gather all necessary documents including academic records, income certificates, and identity proofs.</p></div></div>
-        <div class="schol-step"><div class="schol-step-ic"><i class="fas fa-laptop"></i></div><div><h3>Online Application</h3><p>Complete the online application form with accurate details and upload required documents.</p></div></div>
-        <div class="schol-step"><div class="schol-step-ic"><i class="fas fa-check-double"></i></div><div><h3>Verification Process</h3><p>Application review and document verification by the scholarship committee.</p></div></div>
-      </div>
+      <div class="verify"><i class="fas fa-circle-info"></i><div><strong>Last verified: <span id="lastVerified"></span></strong><br>Eligibility, amounts and dates are set by the scheme authorities and may change. Please confirm on the official portal before applying. Listing here does not guarantee a scholarship.</div></div>
+      <div class="acc" id="scholGrid"></div>
     </div>
-  </div>
-
-  <div class="sec bg-white">
+  </section>
+  <section class="sec alt">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Common Questions</span>
-        <h2>Scholarship <em>FAQs</em></h2>
-      </div>
-      <div class="schol-faq-grid">
-        <div class="schol-faq"><h4><i class="fas fa-question-circle"></i> How to Apply?</h4><p>Contact our team with your documents. We will guide you through the entire scholarship application process step by step, free of charge.</p></div>
-        <div class="schol-faq"><h4><i class="fas fa-map-marker-alt"></i> Where to Apply?</h4><p>Visit our Head Office in Elachipalayam or Branch Office in Kallakurichi, or contact our support team via WhatsApp for guidance on the application process.</p></div>
-        <div class="schol-faq"><h4><i class="fas fa-user-check"></i> What is the Eligibility?</h4><p>Eligibility varies by scholarship. Generally, academic performance, family income, community category, and course of study are considered for each scheme.</p></div>
-        <div class="schol-faq"><h4><i class="fas fa-university"></i> Government Schemes</h4><p>We facilitate applications for various state and central government scholarship schemes, helping students access all financial support they are entitled to.</p></div>
+      <div class="sec-head"><h2>Application process</h2></div>
+      <div class="steps">
+        <div class="step"><h3>Check eligibility</h3><p>Read the current scheme guidelines on the official portal.</p></div>
+        <div class="step"><h3>Collect documents</h3><p>Marks, community, income and identity proofs as the scheme requires.</p></div>
+        <div class="step"><h3>Apply online</h3><p>Fill the official form and upload documents before the deadline.</p></div>
+        <div class="step"><h3>Verification</h3><p>The institution and authority verify your application.</p></div>
       </div>
     </div>
-  </div>
+  </section>
+  <section class="sec"><div class="wrap" style="text-align:center"><h2 style="margin-bottom:10px">Need help understanding a scheme?</h2><p style="color:var(--muted);margin-bottom:18px">Our team can explain the process and what to prepare.</p><a class="btn btn-blue" href="#contact">Free Career Counselling</a></div></section>
+</div>
 
-  <div class="schol-cta">
-    <div class="wrap" style="text-align:center">
-      <h2>Ready to Start Your Journey?</h2>
-      <p>Take the first step towards your educational goals. Our team is here to support you throughout the scholarship application process.</p>
-      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:24px">
-        <button onclick="showPage('apply')" class="btn-hero btn-solid"><i class="fas fa-pen"></i> Fill Application Form</button>
-      </div>
+<!-- ================= KNOWLEDGE HUB ================= -->
+<div id="view-knowledge-hub" class="view">
+  <section class="page-hero"><div class="wrap"><h1>Knowledge Hub</h1><p>Practical guides for students and parents planning education after school.</p></div></section>
+  <section class="sec">
+    <div class="wrap kh">
+      <article><span class="tag">Course selection</span><h3>Choosing a course after 12th</h3><p>Start with what you enjoy and do well, then look at what each course leads to.</p><ul><li>List your top subjects and interests.</li><li>Check eligibility and entrance requirements.</li><li>Compare career paths and further study options.</li><li>Talk to a counsellor before deciding.</li></ul></article>
+      <article><span class="tag">Pathways</span><h3>Diploma or degree: which path?</h3><p>A diploma is shorter and skills-focused, and may lead to lateral entry into a degree in some cases. A degree takes longer and is broader in scope. The right choice depends on your goals and finances.</p></article>
+      <article><span class="tag">Admission</span><h3>Documents to keep ready</h3><ul><li>Mark sheets and transfer certificate</li><li>Community and income certificates, if applicable</li><li>Identity and address proof</li><li>Passport-size photographs</li></ul><p style="margin-top:8px">Exact requirements differ by course and institution.</p></article>
+      <article><span class="tag">Colleges</span><h3>How to evaluate a college</h3><ul><li>Check approvals and affiliation on official websites.</li><li>Review the faculty, labs and facilities.</li><li>Ask about total fees, not only tuition.</li><li>Ask about internships and placement support, and verify the answers.</li></ul></article>
+      <article><span class="tag">Scholarships</span><h3>Scholarship basics</h3><p>Scholarships are offered by governments and institutions based on criteria such as merit, community, income or special category. Always apply through the official portal and keep your documents updated. See our <a href="#scholarships">Scholarship Information Portal</a>.</p></article>
+      <article><span class="tag">Parents</span><h3>Questions parents can ask</h3><ul><li>What career options does this course open?</li><li>What is the full cost over the whole course?</li><li>What are the eligibility and admission steps?</li><li>What backup options exist?</li></ul></article>
     </div>
-  </div>
-</section>
+  </section>
+  <section class="sec alt-g"><div class="wrap" style="text-align:center"><h2 style="margin-bottom:14px">Still unsure? Talk to an advisor</h2><a class="btn btn-green" href="#contact">Free Career Counselling</a></div></section>
+</div>
+</main>
 
 <footer>
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <img src="https://i.ibb.co/fdYb2ktk/logo.png" alt="Future Tech Logo">
-      <h3>Future Tech Educational Guidance</h3>
-      <p>A Unit of Future Tech Career Solutions Pvt Ltd</p>
-      <p style="margin-top:4px">MSME Reg: TN-14-0051932</p>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h3>FUTURE <i>TECH</i> CAREER SOLUTIONS (OPC) PRIVATE LIMITED</h3>
+        <p class="tagline">Delivering Tomorrow’s Guidance Today!</p>
+        <p>www.futureguidance.in</p>
+        <p>CIN: U85500TZ2026OPC040738 &nbsp;|&nbsp; Udyam Registration: UDYAM-TN-14-0116936</p>
+        <p>Registered Office: 13/141, Pillaiyar Kovil Street, Sandaipettai, Elachipalayam PO, Tiruchengode TK, Namakkal – 637202, Tamil Nadu, India.</p>
+      </div>
+      <div class="flinks">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#courses">Courses</a>
+        <a href="#scholarships">Scholarships</a><a href="#knowledge-hub">Knowledge Hub</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      </div>
     </div>
-    <div class="footer-links">
-      <a href="#" onclick="showPage('home')">Home</a>
-      <a href="#" onclick="showPage('about')">About Us</a>
-      <a href="#" onclick="showPage('services')">Services</a>
-      <a href="#" onclick="showPage('courses')">Courses</a>
-      <a href="#" onclick="showPage('contact')">Contact</a>
-      <a href="#" onclick="showPage('scholarship')">Scholarships</a>
-      <a href="#" onclick="showPage('apply')">Talk to Expert Now</a>
-    </div>
+    <div class="copy">© 2026 Future Tech Career Solutions (OPC) Private Limited. All rights reserved.</div>
   </div>
-  <div class="footer-copy">© 2026 Future Tech Educational Guidance. All Rights Reserved.</div>
 </footer>
 
+<div class="sticky-cta">
+  <a class="co" href="#contact"><i class="fas fa-comments"></i> Free Counselling</a>
+</div>
+
 <script>
-const hamBtn = document.getElementById('hamBtn');
-const mainNav = document.getElementById('mainNav');
-hamBtn.addEventListener('click', (e) => {
-  e.stopPropagation();
-  hamBtn.classList.toggle('open');
-  mainNav.classList.toggle('open');
-});
-mainNav.addEventListener('click', (e) => {
-  if (e.target.tagName === 'BUTTON') {
-    hamBtn.classList.remove('open');
-    mainNav.classList.remove('open');
-  }
-});
-function showPage(page) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById(page).classList.add('active');
-  document.querySelectorAll('nav button').forEach(b => {
-    const isActive = b.getAttribute('onclick') === `showPage('${page}')`;
-    b.classList.toggle('active-btn', isActive);
-  });
-  document.querySelectorAll('.nav-cta').forEach(b => b.classList.add('nav-cta'));
-  hamBtn.classList.remove('open');
-  mainNav.classList.remove('open');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+/* ============ ADMIN CONFIG (edit here) ============ */
+const CONFIG = {
+  showStudyAbroad: false,          // set true ONLY if the company currently provides Study Abroad services
+  showBranchOffice: true,          // set false if the Kallakurichi branch is no longer current
+  scholarshipsLastVerified: 'Pending – update after verifying each scheme',
+  whatsapp: '919789956246',
+  leadEmail: 'futureeducationalguidance25@gmail.com',
+  emailjs: { service: 'service_0fwxma1', template: 'template_walolhc' }
+};
+
+/* ============ ROUTING ============ */
+const VIEWS = ['home','about','scholarships','knowledge-hub'];
+const META = {
+  home:['Future Tech Career Solutions | Delivering Tomorrow’s Guidance Today!','Personalised career, education and admission guidance from Future Tech Career Solutions (OPC) Private Limited, Tiruchengode, Namakkal.'],
+  about:['About Us | Future Tech Career Solutions (OPC) Private Limited','Learn about Future Tech Career Solutions: career guidance, admission support, training and employability services for students.'],
+  scholarships:['Scholarship Information Portal | Future Tech Career Solutions','Information on Tamil Nadu and central scholarship schemes with eligibility notes and official source links.'],
+  'knowledge-hub':['Knowledge Hub | Future Tech Career Solutions','Guides for students and parents on choosing courses, preparing documents and evaluating colleges.']
+};
+function route(){
+  let h = (location.hash||'#home').slice(1) || 'home';
+  let view = VIEWS.includes(h) ? h : 'home';
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+  document.getElementById('view-'+view).classList.add('active');
+  document.title = META[view][0];
+  document.getElementById('metaDesc').setAttribute('content', META[view][1]);
+  document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on', a.dataset.r===h && a.dataset.r!=='cta'));
+  if(!VIEWS.includes(h) || h==='home'){
+    const el = h!=='home' ? document.getElementById(h) : null;
+    if(el) setTimeout(()=>el.scrollIntoView(), 30); else window.scrollTo(0,0);
+  } else window.scrollTo(0,0);
+  nav.classList.remove('open'); ham.setAttribute('aria-expanded','false');
 }
-let cur = 0;
-const slides = document.querySelectorAll('.slide');
-function goSlide(n) {
-  slides[cur].classList.remove('active');
-  cur = (n + slides.length) % slides.length;
-  slides[cur].classList.add('active');
-}
-setInterval(() => goSlide(cur + 1), 10000);
+const ham = document.getElementById('ham'), nav = document.getElementById('nav');
+ham.addEventListener('click',()=>{const o=nav.classList.toggle('open');ham.setAttribute('aria-expanded',o)});
+window.addEventListener('hashchange',route);
+
+/* ============ PILLARS ============ */
+const PILLARS = [
+  ['fas fa-route','Admission & Education Guidance','Help choosing courses and colleges, and support through the admission process.'],
+  ['fas fa-compass','Career Guidance & Counselling','One-to-one counselling to match strengths and interests with career paths.'],
+  ['fas fa-earth-asia','Higher Education & Study Abroad','Guidance on higher study options in India and abroad.','abroad'],
+  ['fas fa-laptop-code','Training & Skill Development','Skill-building programmes that prepare students for industry needs.'],
+  ['fas fa-book-open','Tuition & Academic Support','Academic support to improve performance and build study skills.'],
+  ['fas fa-briefcase','Placement & Employability Support','Communication, interview and career readiness support.']
+];
+document.getElementById('pillars').innerHTML = PILLARS
+  .filter(p=>p[4]!=='abroad' || CONFIG.showStudyAbroad)
+  .map(p=>`<div class="card pillar"><div class="ic"><i class="${p[0]}"></i></div><h3>${p[1]}</h3><p>${p[2]}</p></div>`).join('');
+
+/* ============ TEAM ============ */
+const ADVISORS = [
+  ['A. Poulin Mary','B.A., B.Ed.','Senior Career Advisor cum Operations Manager','images/image2.jpg',true],
+  ['T. Yogeshwaran','B.E (Agri Eng)., M.E (Energy Eng).','Career Advisor','https://i.ibb.co/0VZvdNz7',false],
+  ['M. Nasima Banu','B.Com (CA).','Career Advisor','images/image3.jpg',false],
+  ['K. Kalaiyarasi','B.A., B.Ed.','Career Advisor','images/image4.jpg',false],
+  ['R. Rajapriya','M.Com.','Career Advisor','images/image5.jpg',false],
+  ['P. Janagi','B.A., B.Ed.','Career Advisor','images/image6.jpg',false],
+  ['E. Jayamani','B.A., B.Ed.','Career Advisor','images/image7.jpg',false],
+  ['C. Latha','M.A., B.Ed.','Career Advisor','images/image8.jpg',false]
+];
+const ini = n => n.replace(/[^A-Za-z ]/g,'').split(' ').filter(Boolean).slice(-2).map(w=>w[0]).join('');
+const teamHTML = ADVISORS.map(a=>`<div class="member"><div class="avatar"><img src="${a[3]}" alt="${a[0]}" loading="lazy" onerror="this.parentNode.textContent='${ini(a[0])}'"></div><h4>${a[0]}</h4><p>${a[1]}</p><span class="role ${a[4]?'':'g'}">${a[2]}</span></div>`).join('')
+  + `<div class="member guest"><div class="avatar"><i class="fas fa-user-tie"></i></div><h4>7 Guest Experts</h4><p>Industry and academic professionals</p><span class="role">Guest Experts</span></div>`;
+document.getElementById('team').innerHTML = teamHTML;
+document.getElementById('team2').innerHTML = teamHTML;
+
+/* ============ COURSES (single consolidated section) ============ */
 const CD = {
-  diploma:{groups:[
-    {l:'Diploma Engineering Programs (3 Years)',c:'blue',i:["Diploma in Mechanical Engineering","Diploma in Electrical & Electronics Engineering","Diploma in Computer Engineering","Diploma in Civil Engineering","Diploma in Electronics & Communication Engineering","Diploma in Mechatronics","Diploma in Automobile Engineering","Diploma in Artificial Intelligence & Machine Learning","Diploma in Cyber Security","Diploma in Data Science"]},
-    {l:'Vocational & Skill Programs',c:'green',i:["Vocational Diploma in Refrigeration & Air Conditioning","Vocational Diploma in Electrical Maintenance","Diploma in Fire & Safety Engineering – 1–2 Years","Diploma in CNC Operator & Tooling","Diploma in Logistics & Supply Chain Management","Diploma in Hotel Management – 1–2 Years","Diploma in Fashion Designing – 1 Year","Diploma in Graphic & Web Designing – 1 Year","Diploma in Multimedia & Animation – 1 Year"]}
+  engineering:{n:'Engineering',groups:[
+    {l:'Undergraduate Engineering (UG)',c:'',i:["Artificial Intelligence & Data Science","Aeronautical Engineering","Automobile Engineering","Aerospace Engineering","Agricultural Engineering","Computer Science & Engineering","Cyber Security","Artificial Intelligence & Machine Learning","Internet of Things","Computer Science & Design (CSD)","Computer Science & Business Systems (CSBS)","Computer Science Technology (CST)","Electronics & Telecommunication Engineering","Electrical & Electronics Engineering","Electronics & Communication Engineering","Biotechnology","Biomedical Engineering","Chemical Engineering","Civil Engineering","Geoinformatics","Industrial Engineering","Information Technology (IT)","Mechanical Engineering","Electronics & Instrumentation Engineering","Food Technology","Manufacturing Engineering","Materials Science & Engineering","Mechatronics Engineering","Mining Engineering","Petrochemical Engineering","Pharmaceutical Engineering","Printing & Packaging Technology","Production Engineering","Robotics and Automation","Safety & Fire Engineering","Textile Technology"]},
+    {l:'Postgraduate Engineering (PG)',c:'g',i:["M.E Construction Engineering and Management","M.E Structural Engineering","M.E Environmental Engineering","M.E Soil Mechanics and Foundation Engineering","M.E Aeronautical Engineering","M.E Automobile Engineering","M.E CAD/CAM","M.E Energy Engineering","M.E Industrial Engineering","M.E Manufacturing Engineering","M.E Mechatronics Engineering","M.E Product Design and Development","M.E Thermal Engineering","M.E Embedded System Technologies","M.E Power Electronics and Drives","M.E Power Systems Engineering","M.E Applied Electronics","M.E Communication Systems","M.E VLSI Design","M.E Software Engineering","M.Tech Biotechnology","M.Tech Chemical Engineering","M.Tech Textile Technology"]},
+    {l:'Other Programs',c:'',i:["M.Arch (Architecture, Urban Design, Digital Architecture)","MBA (Master of Business Administration)","MCA (Master of Computer Applications)"]}
   ]},
-  engineering:{groups:[
-    {l:'Undergraduate Engineering (UG)',c:'blue',i:["Artificial Intelligence & Data Science","Aeronautical Engineering","Automobile Engineering","Aerospace Engineering","Agricultural Engineering","Computer Science & Engineering","Cyber Security","Artificial Intelligence & Machine Learning","Internet of Things","Computer Science & Design (CSD)","Computer Science & Business Systems (CSBS)","Computer Science Technology (CST)","Electronics & Telecommunication Engineering","Electrical & Electronics Engineering","Electronics & Communication Engineering","Biotechnology","Biomedical Engineering","Chemical Engineering","Civil Engineering","Geoinformatics","Industrial Engineering","Information Technology (IT)","Mechanical Engineering","Electronics & Instrumentation Engineering","Food Technology","Manufacturing Engineering","Materials Science & Engineering","Mechatronics Engineering","Mining Engineering","Petrochemical Engineering","Pharmaceutical Engineering","Printing & Packaging Technology","Production Engineering","Robotics and Automation","Safety & Fire Engineering","Textile Technology"]},
-    {l:'Postgraduate Engineering (PG)',c:'green',i:["M.E Construction Engineering and Management","M.E Structural Engineering","M.E Environmental Engineering","M.E Soil Mechanics and Foundation Engineering","M.E Aeronautical Engineering","M.E Automobile Engineering","M.E CAD/CAM","M.E Energy Engineering","M.E Industrial Engineering","M.E Manufacturing Engineering","M.E Mechatronics Engineering","M.E Product Design and Development","M.E Thermal Engineering","M.E Embedded System Technologies","M.E Power Electronics and Drives","M.E Power Systems Engineering","M.E Applied Electronics","M.E Communication Systems","M.E VLSI Design","M.E Software Engineering","M.Tech Biotechnology","M.Tech Chemical Engineering","M.Tech Textile Technology"]},
-    {l:'Other Programs',c:'purple',i:["M.Arch (Architecture, Urban Design, Digital Architecture)","MBA (Master of Business Administration)","MCA (Master of Computer Applications)"]}
+  medical:{n:'Medical',groups:[
+    {l:'Undergraduate (UG) Medical',c:'',i:["MBBS – Bachelor of Medicine and Bachelor of Surgery (5½ Years)","BDS – Bachelor of Dental Surgery (5 Years)","BSMS – Bachelor of Siddha Medicine and Surgery (5½ Years)","BHMS – Bachelor of Homeopathic Medicine and Surgery (5½ Years)","BAMS – Bachelor of Ayurvedic Medicine and Surgery (5½ Years)","BNYS – Bachelor of Naturopathy and Yogic Sciences (5½ Years)"]},
+    {l:'Postgraduate (PG) Medical',c:'g',i:["MD / MS – Doctor of Medicine / Master of Surgery (3 Years)","MDS – Master of Dental Surgery (3 Years)","Doctor of Medicine – Ayurveda / Siddha / Homeopathy / Yoga (3 Years)","Postgraduate Diploma in Medical Specialties (2 Years)"]}
   ]},
-  medical:{groups:[
-    {l:'Undergraduate (UG) Medical',c:'blue',i:["MBBS – Bachelor of Medicine and Bachelor of Surgery (5½ Years)","BDS – Bachelor of Dental Surgery (5 Years)","BSMS – Bachelor of Siddha Medicine and Surgery (5½ Years)","BHMS – Bachelor of Homeopathic Medicine and Surgery (5½ Years)","BAMS – Bachelor of Ayurvedic Medicine and Surgery (5½ Years)","BNYS – Bachelor of Naturopathy and Yogic Sciences (5½ Years)"]},
-    {l:'Postgraduate (PG) Medical',c:'green',i:["MD / MS – Doctor of Medicine / Master of Surgery (3 Years)","MDS – Master of Dental Surgery (3 Years)","Doctor of Medicine – Ayurveda / Siddha / Homeopathy / Yoga (3 Years)","Postgraduate Diploma in Medical Specialties (2 Years)"]}
+  nursing:{n:'Nursing',groups:[
+    {l:'UG Nursing Courses',c:'',i:["B.Sc Nursing – 4 Years","Post Basic B.Sc Nursing – 2 Years","General Nursing & Midwifery (GNM) – 3 Years","Auxiliary Nursing & Midwifery (ANM) – 2 Years"]},
+    {l:'PG Nursing Courses',c:'g',i:["M.Sc Medical Surgical Nursing","M.Sc Child Health (Paediatric) Nursing","M.Sc Obstetrics & Gynaecology Nursing","M.Sc Community Health Nursing","M.Sc Psychiatric (Mental Health) Nursing"]}
   ]},
-  nursing:{groups:[
-    {l:'UG Nursing Courses',c:'blue',i:["B.Sc Nursing – 4 Years","Post Basic B.Sc Nursing – 2 Years","General Nursing & Midwifery (GNM) – 3 Years","Auxiliary Nursing & Midwifery (ANM) – 2 Years"]},
-    {l:'PG Nursing Courses',c:'green',i:["M.Sc Medical Surgical Nursing","M.Sc Child Health (Paediatric) Nursing","M.Sc Obstetrics & Gynaecology Nursing","M.Sc Community Health Nursing","M.Sc Psychiatric (Mental Health) Nursing"]}
+  pharmacy:{n:'Pharmacy',groups:[
+    {l:'UG Pharmacy Courses',c:'',i:["D.Pharm – 2 Years","B.Pharm – 4 Years","Pharm.D (Doctor of Pharmacy) – 6 Years"]},
+    {l:'PG Pharmacy Courses',c:'g',i:["M.Pharm (Pharmaceutics)","M.Pharm (Pharmaceutical Chemistry)","M.Pharm (Pharmacology)","M.Pharm (Pharmaceutical Analysis)","M.Pharm (Pharmacognosy)","M.Pharm (Pharmacy Practice)","M.Pharm (Pharmaceutical Biotechnology)","M.Pharm (Regulatory Affairs)","M.Pharm (Pharmaceutical Quality Assurance)","M.Pharm (Clinical Pharmacy)"]}
   ]},
-  pharmacy:{groups:[
-    {l:'UG Pharmacy Courses',c:'blue',i:["D.Pharm – 2 Years","B.Pharm – 4 Years","Pharm.D (Doctor of Pharmacy) – 6 Years"]},
-    {l:'PG Pharmacy Courses',c:'green',i:["M.Pharm (Pharmaceutics)","M.Pharm (Pharmaceutical Chemistry)","M.Pharm (Pharmacology)","M.Pharm (Pharmaceutical Analysis)","M.Pharm (Pharmacognosy)","M.Pharm (Pharmacy Practice)","M.Pharm (Pharmaceutical Biotechnology)","M.Pharm (Regulatory Affairs)","M.Pharm (Pharmaceutical Quality Assurance)","M.Pharm (Clinical Pharmacy)"]}
+  allied:{n:'Allied Health',groups:[
+    {l:'UG Allied Health Science',c:'',i:["B.Sc Accident & Emergency Care Technology","B.Sc Cardiac Technology","B.Sc Cardio Pulmonary Perfusion Care Technology","B.Sc Critical Care Technology","B.Sc Clinical Nutrition","B.Sc Dialysis Technology","B.Sc Medical Laboratory Technology","B.Sc Medical Record Science","B.Sc Neuro Electro Physiology","B.Sc Operation Theatre & Anaesthesia Technology","B.Sc Radiotherapy Technology","B.Sc Radiography & Imaging Technology","B.Sc Respiratory Therapy","B.Sc Physician Assistant","B.Optom (Optometry)","Bachelor of Audiology & Speech Language Pathology (B.ASLP)"]},
+    {l:'PG Allied Health Science',c:'g',i:["M.Sc Clinical Nutrition","M.Sc Clinical Embryology","M.Sc Medical Laboratory Technology","M.Sc Medical Biochemistry","M.Sc Medical Microbiology","M.Sc Epidemiology","M.Sc Molecular Virology","M.Sc Medical Physics","M.Sc Biostatistics","M.Sc Radiography & Imaging Technology","M.Sc Critical Care Technology","M.Sc Radiotherapy Technology","M.Sc Respiratory Therapy","M.Sc Human Genetics","M.Optom (Master of Optometry)","Master of Hospital Administration (M.H.A)","Master of Audiology & Speech Language Pathology (M.ASLP)"]}
   ]},
-  therapy:{groups:[
-    {l:'UG Therapy Courses',c:'blue',i:["Bachelor of Physiotherapy (BPT) – 4½ Years","Bachelor of Occupational Therapy (BOT) – 4½ Years"]},
-    {l:'PG Therapy Courses',c:'green',i:["MPT Orthopaedics","MPT Cardiorespiratory","MPT Neurological Sciences","MPT Pediatrics","MPT Community Health","MPT Sports & Fitness","MPT Women's Health / Oncology / Geriatrics"]}
+  therapy:{n:'Therapy',groups:[
+    {l:'UG Therapy Courses',c:'',i:["Bachelor of Physiotherapy (BPT) – 4½ Years","Bachelor of Occupational Therapy (BOT) – 4½ Years"]},
+    {l:'PG Therapy Courses',c:'g',i:["MPT Orthopaedics","MPT Cardiorespiratory","MPT Neurological Sciences","MPT Pediatrics","MPT Community Health","MPT Sports & Fitness","MPT Women's Health / Oncology / Geriatrics"]}
   ]},
-  allied:{groups:[
-    {l:'UG Allied Health Science',c:'blue',i:["B.Sc Accident & Emergency Care Technology","B.Sc Cardiac Technology","B.Sc Cardio Pulmonary Perfusion Care Technology","B.Sc Critical Care Technology","B.Sc Clinical Nutrition","B.Sc Dialysis Technology","B.Sc Medical Laboratory Technology","B.Sc Medical Record Science","B.Sc Neuro Electro Physiology","B.Sc Operation Theatre & Anaesthesia Technology","B.Sc Radiotherapy Technology","B.Sc Radiography & Imaging Technology","B.Sc Respiratory Therapy","B.Sc Physician Assistant","B.Optom (Optometry)","Bachelor of Audiology & Speech Language Pathology (B.ASLP)"]},
-    {l:'PG Allied Health Science',c:'green',i:["M.Sc Clinical Nutrition","M.Sc Clinical Embryology","M.Sc Medical Laboratory Technology","M.Sc Medical Biochemistry","M.Sc Medical Microbiology","M.Sc Epidemiology","M.Sc Molecular Virology","M.Sc Medical Physics","M.Sc Biostatistics","M.Sc Radiography & Imaging Technology","M.Sc Critical Care Technology","M.Sc Radiotherapy Technology","M.Sc Respiratory Therapy","M.Sc Human Genetics","M.Optom (Master of Optometry)","Master of Hospital Administration (M.H.A)","Master of Audiology & Speech Language Pathology (M.ASLP)"]}
+  arts:{n:'Arts & Science',groups:[
+    {l:'UG Arts & Science',c:'',i:["B.A English Literature – 3 Years","B.A Tamil Literature – 3 Years","B.A Economics – 3 Years","B.A Sociology / Psychology / Criminology – 3 Years","B.A Political Science – 3 Years","B.A Journalism & Mass Communication – 3 Years","B.B.A – 3 Years","BBA Airline & Airport Management – 3 Years","BBA Logistics – 3 Years","BBA Information System – 3 Years","BBA International Business – 3 Years","BBA Retail Management – 3 Years","BBA Business Analytics – 3 Years","B.Sc Computer Science – 3 Years","B.Sc Information Technology – 3 Years","B.Sc Mathematics / Physics / Chemistry – 3 Years","B.Sc Biotechnology / Microbiology / Biochemistry – 3 Years","B.Sc Visual Communication / Animation – 3 Years","B.Sc Artificial Intelligence & Data Science – 3 Years","B.Sc Cyber Security – 3 Years","B.Com (General / Computer Applications / Accounting & Finance) – 3 Years","B.Com Banking / Finance / Insurance – 3 Years","BCA – Bachelor of Computer Applications – 3 Years"]},
+    {l:'PG Arts & Science',c:'g',i:["M.A English / Tamil / Economics / Sociology / Psychology – 2 Years","M.A Political Science – 2 Years","M.A Journalism & Mass Communication – 2 Years","M.Sc Computer Science / IT / Data Science – 2 Years","M.Sc Mathematics / Physics / Chemistry – 2 Years","M.Sc Biotechnology / Microbiology / Biochemistry – 2 Years","M.Sc Food & Nutrition – 2 Years","M.Com (General / Computer Applications / International Business) – 2 Years","MBA – Master of Business Administration – 2 Years","MCA – Master of Computer Applications – 2 Years","MSW – Master of Social Work – 2 Years"]}
   ]},
-  arts:{groups:[
-    {l:'UG Arts & Science',c:'blue',i:["B.A English Literature – 3 Years","B.A Tamil Literature – 3 Years","B.A Economics – 3 Years","B.A Sociology / Psychology / Criminology – 3 Years","B.A Political Science – 3 Years","B.A Journalism & Mass Communication – 3 Years","B.B.A – 3 Years","BBA Airline & Airport Management – 3 Years","BBA Logistics – 3 Years","BBA Information System – 3 Years","BBA International Business – 3 Years","BBA Retail Management – 3 Years","BBA Business Analytics – 3 Years","B.Sc Computer Science – 3 Years","B.Sc Information Technology – 3 Years","B.Sc Mathematics / Physics / Chemistry – 3 Years","B.Sc Biotechnology / Microbiology / Biochemistry – 3 Years","B.Sc Visual Communication / Animation – 3 Years","B.Sc Artificial Intelligence & Data Science – 3 Years","B.Sc Cyber Security – 3 Years","B.Com (General / Computer Applications / Accounting & Finance) – 3 Years","B.Com Banking / Finance / Insurance – 3 Years","BCA – Bachelor of Computer Applications – 3 Years"]},
-    {l:'PG Arts & Science',c:'green',i:["M.A English / Tamil / Economics / Sociology / Psychology – 2 Years","M.A Political Science – 2 Years","M.A Journalism & Mass Communication – 2 Years","M.Sc Computer Science / IT / Data Science – 2 Years","M.Sc Mathematics / Physics / Chemistry – 2 Years","M.Sc Biotechnology / Microbiology / Biochemistry – 2 Years","M.Sc Food & Nutrition – 2 Years","M.Com (General / Computer Applications / International Business) – 2 Years","MBA – Master of Business Administration – 2 Years","MCA – Master of Computer Applications – 2 Years","MSW – Master of Social Work – 2 Years"]}
+  management:{n:'Management',groups:[
+    {l:'UG Management',c:'',i:["B.B.A (Bachelor of Business Administration) – 3 Years","B.A Business Economics – 3 Years","B.Sc Business Information Systems – 3 Years","B.Voc Logistics Management – 3 Years","B.Voc Retail Management – 3 Years"]},
+    {l:'PG Management',c:'g',i:["MBA – Master of Business Administration – 2 Years","MBA HR – 2 Years","MBA Finance – 2 Years","MBA Marketing – 2 Years","MBA Operations – 2 Years","MBA Systems – 2 Years","MBA Business Analytics – 2 Years","MBA Entrepreneurship – 2 Years","PGDM – Post Graduate Diploma in Management – 2 Years","Executive MBA – 1.5 to 2 Years","M.Phil Management – 1 Year","Ph.D Management"]}
   ]},
-  management:{groups:[
-    {l:'UG Management',c:'blue',i:["B.B.A (Bachelor of Business Administration) – 3 Years","B.A Business Economics – 3 Years","B.Sc Business Information Systems – 3 Years","B.Voc Logistics Management – 3 Years","B.Voc Retail Management – 3 Years"]},
-    {l:'PG Management',c:'green',i:["MBA – Master of Business Administration – 2 Years","MBA HR – 2 Years","MBA Finance – 2 Years","MBA Marketing – 2 Years","MBA Operations – 2 Years","MBA Systems – 2 Years","MBA Business Analytics – 2 Years","MBA Entrepreneurship – 2 Years","PGDM – Post Graduate Diploma in Management – 2 Years","Executive MBA – 1.5 to 2 Years","M.Phil Management – 1 Year","Ph.D Management"]}
+  law:{n:'Law',groups:[
+    {l:'UG Law Courses',c:'',i:["B.A LL.B (Hons.) – 5 Years","B.Com LL.B (Hons.) – 5 Years","B.B.A LL.B (Hons.) – 5 Years","B.C.A LL.B (Hons.) – 5 Years","LL.B – Bachelor of Law – 3 Years"]},
+    {l:'PG Law Courses',c:'g',i:["LL.M – Master of Laws – 2 Years","M.Phil Law – 1 Year","Ph.D Law","PG Diploma in Cyber Law / Human Rights / IPR – 1 Year","Certificate Course in Legal Aid & Services – 6 Months"]}
   ]},
-  law:{groups:[
-    {l:'UG Law Courses',c:'blue',i:["B.A LL.B (Hons.) – 5 Years","B.Com LL.B (Hons.) – 5 Years","B.B.A LL.B (Hons.) – 5 Years","B.C.A LL.B (Hons.) – 5 Years","LL.B – Bachelor of Law – 3 Years"]},
-    {l:'PG Law Courses',c:'green',i:["LL.M – Master of Laws – 2 Years","M.Phil Law – 1 Year","Ph.D Law","PG Diploma in Cyber Law / Human Rights / IPR – 1 Year","Certificate Course in Legal Aid & Services – 6 Months"]}
+  education:{n:'Education',groups:[
+    {l:'UG Education Courses',c:'',i:["B.Ed – Bachelor of Education – 2 Years","B.El.Ed – Bachelor of Elementary Education – 4 Years","Integrated B.Sc B.Ed – 4 Years","Integrated B.A B.Ed – 4 Years","D.T.Ed – Diploma in Teacher Education – 2 Years"]},
+    {l:'PG Education Courses',c:'g',i:["M.Ed – Master of Education – 2 Years","M.Phil Education – 1 Year","Ph.D Education","PG Diploma in Educational Management – 1 Year"]}
   ]},
-  education:{groups:[
-    {l:'UG Education Courses',c:'blue',i:["B.Ed – Bachelor of Education – 2 Years","B.El.Ed – Bachelor of Elementary Education – 4 Years","Integrated B.Sc B.Ed – 4 Years","Integrated B.A B.Ed – 4 Years","D.T.Ed – Diploma in Teacher Education – 2 Years"]},
-    {l:'PG Education Courses',c:'green',i:["M.Ed – Master of Education – 2 Years","M.Phil Education – 1 Year","Ph.D Education","PG Diploma in Educational Management – 1 Year"]}
+  agriculture:{n:'Agriculture',groups:[
+    {l:'UG Agriculture Courses',c:'',i:["B.Sc Agriculture – 4 Years","B.Sc Horticulture – 4 Years","B.Sc Forestry – 4 Years","B.Sc Sericulture – 4 Years","B.Sc Food Technology – 4 Years","B.Sc Home Science – 4 Years","B.Tech Agricultural Engineering – 4 Years"]},
+    {l:'PG Agriculture Courses',c:'g',i:["M.Sc Agriculture – 2 Years","M.Sc Horticulture – 2 Years","M.Sc Forestry – 2 Years","M.Sc Food Science & Nutrition – 2 Years","M.Tech Agricultural Engineering – 2 Years","MBA Agribusiness Management – 2 Years","Ph.D Agriculture"]}
   ]},
-  agriculture:{groups:[
-    {l:'UG Agriculture Courses',c:'blue',i:["B.Sc Agriculture – 4 Years","B.Sc Horticulture – 4 Years","B.Sc Forestry – 4 Years","B.Sc Sericulture – 4 Years","B.Sc Food Technology – 4 Years","B.Sc Home Science – 4 Years","B.Tech Agricultural Engineering – 4 Years"]},
-    {l:'PG Agriculture Courses',c:'green',i:["M.Sc Agriculture – 2 Years","M.Sc Horticulture – 2 Years","M.Sc Forestry – 2 Years","M.Sc Food Science & Nutrition – 2 Years","M.Tech Agricultural Engineering – 2 Years","MBA Agribusiness Management – 2 Years","Ph.D Agriculture"]}
+  diploma:{n:'Diploma',groups:[
+    {l:'Diploma Engineering Programs (3 Years)',c:'',i:["Diploma in Mechanical Engineering","Diploma in Electrical & Electronics Engineering","Diploma in Computer Engineering","Diploma in Civil Engineering","Diploma in Electronics & Communication Engineering","Diploma in Mechatronics","Diploma in Automobile Engineering","Diploma in Artificial Intelligence & Machine Learning","Diploma in Cyber Security","Diploma in Data Science"]},
+    {l:'Vocational & Skill Programs',c:'g',i:["Vocational Diploma in Refrigeration & Air Conditioning","Vocational Diploma in Electrical Maintenance","Diploma in Fire & Safety Engineering – 1–2 Years","Diploma in CNC Operator & Tooling","Diploma in Logistics & Supply Chain Management","Diploma in Hotel Management – 1–2 Years","Diploma in Fashion Designing – 1 Year","Diploma in Graphic & Web Designing – 1 Year","Diploma in Multimedia & Animation – 1 Year"]}
   ]}
 };
-function showCourses(type) {
-  const cat = CD[type]; if (!cat) return;
-  let h = '';
-  cat.groups.forEach(g => {
-    h += `<div class="cgrp"><div class="cgrp-title">${g.l}</div><div class="citems">`;
-    g.i.forEach(x => { h += `<div class="citem ${g.c}">${x}</div>`; });
-    h += `</div></div>`;
-  });
-  document.getElementById('course-content').innerHTML = h;
-  document.getElementById('course-content').scrollIntoView({ behavior:'smooth', block:'start' });
+const tabsEl = document.getElementById('courseTabs');
+tabsEl.innerHTML = Object.keys(CD).map(k=>`<button class="tab" role="tab" aria-selected="false" data-k="${k}">${CD[k].n}</button>`).join('');
+tabsEl.addEventListener('click',e=>{const b=e.target.closest('.tab'); if(b) showCourses(b.dataset.k)});
+function showCourses(k){
+  tabsEl.querySelectorAll('.tab').forEach(t=>t.setAttribute('aria-selected', t.dataset.k===k));
+  document.getElementById('course-content').innerHTML = CD[k].groups.map(g=>
+    `<div class="cgrp"><h3>${g.l}</h3><div class="citems">${g.i.map(x=>`<div class="citem ${g.c}">${x}</div>`).join('')}</div></div>`).join('');
 }
-// ===== FORM SUBMIT via EmailJS =====
-function showMsg(txt, ok) {
-  const el = document.getElementById('form-msg');
-  el.textContent = txt;
-  el.style.display = 'block';
-  el.style.padding = '12px 16px';
-  el.style.borderRadius = '10px';
-  el.style.fontSize = '13.5px';
-  el.style.fontWeight = '600';
-  el.style.marginBottom = '14px';
-  el.style.textAlign = 'center';
-  el.style.background = ok ? '#dcfce7' : '#fee2e2';
-  el.style.color = ok ? '#14532d' : '#991b1b';
-  el.style.border = ok ? '1.5px solid #86efac' : '1.5px solid #fca5a5';
-}
+showCourses('engineering');
+document.getElementById('f-course').innerHTML += Object.keys(CD).map(k=>`<option>${CD[k].n}</option>`).join('') + '<option>Others</option>';
 
-function submitForm() {
-  const n  = document.getElementById('f-name').value.trim();
-  const ph = document.getElementById('f-phone').value.trim();
-  const em = document.getElementById('f-email').value.trim();
-  const ci = document.getElementById('f-city').value.trim();
-  const co = document.getElementById('f-course').value.trim();
-  const ms = document.getElementById('f-msg').value.trim();
-
-  if (!n || !ph || !em || !ci) {
-    showMsg('⚠️ Please fill in Name, Phone, Email and City.', false);
-    return;
-  }
-
-  const btn = document.getElementById('submitBtn');
-  btn.disabled = true;
-  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-
-  // EmailJS template parameters — must match your EmailJS template variables
-  const params = {
-    to_email:  'futureeducationalguidance25@gmail.com',
-    from_name: n,
-    reply_to:  em,
-    phone:     ph,
-    city:      ci,
-    course:    co || 'Not selected',
-    message:   ms || 'N/A'
-  };
-
-  // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS IDs
-  emailjs.send('service_0fwxma1', 'template_walolhc', params)
-    .then(() => {
-      showMsg('✅ Application submitted successfully! We will contact you soon.', true);
-      btn.innerHTML = '<i class="fas fa-check"></i> Submitted!';
-      btn.style.background = 'linear-gradient(135deg,#22c55e,#16a34a)';
-      // Clear form
-      ['f-name','f-phone','f-email','f-city','f-msg'].forEach(id => document.getElementById(id).value = '');
-      document.getElementById('f-course').value = '';
-      // Reset button after 5s
-      setTimeout(() => {
-        btn.disabled = false;
-        btn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit Application';
-        btn.style.background = '';
-      }, 5000);
-    })
-    .catch((err) => {
-      showMsg('❌ Submission failed. Please contact us directly via WhatsApp or Email.', false);
-      btn.disabled = false;
-      btn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit Application';
-      console.error('EmailJS error:', err);
-    });
-}
-// ===== SCHOLARSHIP EXPAND CARDS =====
-const SCHOLARSHIPS = [
-  {
-    icon: 'fas fa-user-graduate',
-    title: 'First Graduate Scholarship',
-    about: 'The First Graduate Scholarship (also known as the First-Generation Graduate Scheme) is a Tamil Nadu government initiative providing tuition fee concessions to students who are the first in their family to pursue a degree.',
-    eligibility: 'Must be the first person in the family to pursue a degree and admitted through TNEA Counseling.',
-    benefit: 'Tuition fee waiver of approximately ₹25,000–₹27,500 per annum.'
-  },
-  {
-    icon: 'fas fa-users',
-    title: '7.5% Horizontal Reservation Scheme',
-    about: 'The 7.5% Horizontal Reservation Scheme is a landmark policy of the Tamil Nadu government designed to increase the representation of government school students in professional undergraduate courses.',
-    eligibility: 'Students who studied from 6th to 12th standard in Tamil Nadu Government schools (Both Tamil/English medium).',
-    benefit: 'The state government covers the entire cost of education, including tuition, hostel, and transport fees.'
-  },
-  {
-    icon: 'fas fa-id-card',
-    title: 'BC/MBC/DNC Scholarship',
-    about: 'The BC/MBC/DNC Scholarship (Post-Matric and Free Education Schemes) is provided by the Tamil Nadu Department of Backward Classes and Most Backward Classes and Minority Welfare to assist students from these communities in pursuing higher education.',
-    eligibility: 'Candidates from BC/MBC/DNC communities with an annual family income below ₹2.5 Lakh (for BC) or no income limit (for some MBC/DNC categories) admitted under Government Quota.',
-    benefit: 'Reimbursement of tuition, special, and exam fees.'
-  },
-  {
-    icon: 'fas fa-book',
-    title: 'Post-Matric Scholarship (SC/ST/SCA/SCC)',
-    about: 'The Post-Matric Scholarship (PMS) for SC, ST, SCA, and SCC students is a flagship centrally sponsored scheme implemented by the Government of Tamil Nadu to support higher education for students from marginalized communities.',
-    eligibility: 'Students from SC, ST, SCA or SC converted to Christianity (SCC) communities with a parental income not exceeding ₹2.5 Lakh per annum.',
-    benefit: 'Covers all compulsory and non-refundable fees, plus a maintenance allowance.'
-  },
-  {
-    icon: 'fas fa-trophy',
-    title: 'Chief Minister Merit Award',
-    about: 'The Chief Minister Merit Award is a prestigious state government scholarship that rewards academically outstanding students who secure top ranks in their 12th standard public examinations. It encourages excellence and academic achievement among Tamil Nadu students.',
-    eligibility: 'Students who score exceptionally high marks (typically above 90%) in Tamil Nadu HSC board exams and pursue higher education in recognized institutions.',
-    benefit: 'Cash award and full/partial fee reimbursement for professional and technical courses.'
-  },
-  {
-    icon: 'fas fa-wheelchair',
-    title: 'Differently-Abled Scholarship',
-    about: 'This scholarship is offered by the Tamil Nadu government to support students with disabilities in pursuing higher education. It ensures that physical challenges do not become barriers to academic aspirations.',
-    eligibility: 'Students with a disability certificate (40% or more disability) from a competent authority, admitted to higher education programs in recognized institutions in Tamil Nadu.',
-    benefit: 'Tuition fee waiver, maintenance allowance, and special allowance for assistive devices and transportation.'
-  },
-  {
-    icon: 'fas fa-hand-holding-heart',
-    title: 'Nalavariyam Welfare Scheme',
-    about: 'The Nalavariyam Welfare Scheme (Destitute Widow/Deserted Women Scheme) provides financial assistance to children of destitute or widowed mothers so they can continue their education without financial hardship.',
-    eligibility: 'Children of widows, destitute women, or deserted women who are pursuing government quota admissions in higher educational institutions in Tamil Nadu.',
-    benefit: 'Monthly maintenance allowance and full fee reimbursement for tuition and hostel in government colleges.'
-  },
-  {
-    icon: 'fas fa-female',
-    title: 'Pudhumai Penn Scheme',
-    about: 'Pudhumai Penn (Modern Woman) is an ambitious Tamil Nadu government scheme launched to support girl students who studied in government schools and are now pursuing higher education. It aims to empower women through financial independence during their college years.',
-    eligibility: 'Girl students who completed their 6th to 12th standard in Tamil Nadu government schools and are now pursuing any UG degree or diploma program in government or aided institutions.',
-    benefit: '₹1,000 per month direct benefit transfer (DBT) throughout the duration of the higher education program.'
-  },
-  {
-    icon: 'fas fa-child',
-    title: 'Tamil Pudhalvan Scheme',
-    about: 'Tamil Pudhalvan is a Tamil Nadu government scheme providing monthly financial support to male students from government schools who pursue higher education. It is the counterpart of Pudhumai Penn, ensuring equal encouragement for boys from government school backgrounds.',
-    eligibility: 'Male students who completed 6th to 12th in Tamil Nadu government schools and are pursuing UG degree or diploma programs in government or government-aided institutions.',
-    benefit: '₹1,000 per month direct benefit transfer (DBT) for the full duration of the higher education program.'
-  },
-  {
-    icon: 'fas fa-running',
-    title: 'Sports Scholarship',
-    about: 'The Sports Scholarship is awarded to student athletes who have represented Tamil Nadu or India at recognized sports events. It acknowledges their dual commitment to academics and sports, and encourages sporting excellence alongside education.',
-    eligibility: 'Students who have participated in state-level, national-level, or international-level sports events recognized by the Sports Development Authority of Tamil Nadu (SDAT) or national sports bodies.',
-    benefit: 'Fee concessions, monthly stipend, sports kit allowance, and priority admission in sports quota seats.'
-  },
-  {
-    icon: 'fas fa-star',
-    title: 'Naan Mudhalvan Scheme',
-    about: 'Naan Mudhalvan (I am the Leader) is a flagship skilling and career readiness program by the Tamil Nadu government. It provides industry-relevant training, soft skills development, and placement support to students and youth to enhance their employability.',
-    eligibility: 'Students in colleges and higher education institutions across Tamil Nadu, especially those in the final years of their UG, PG, or diploma programs, as well as unemployed youth.',
-    benefit: 'Free skill training, industry certifications, internship opportunities, and placement assistance with leading companies.'
-  },
-  {
-    icon: 'fas fa-venus',
-    title: 'AICTE Pragati Scholarship (Girls)',
-    about: 'Pragati is a central government scholarship scheme by AICTE (All India Council for Technical Education) specifically for girl students pursuing technical education. It aims to advance girl students in the field of engineering and technology.',
-    eligibility: 'Girl students admitted to AICTE-approved degree or diploma programs in technical education with a family income below ₹8 Lakh per annum. Two scholarships per family.',
-    benefit: '₹50,000 per annum (up to ₹30,000 for tuition + ₹20,000 for incidental expenses).'
-  },
-  {
-    icon: 'fas fa-landmark',
-    title: 'Central Sector Scholarship Scheme',
-    about: 'The Central Sector Scholarship Scheme (CSSS) is a central government initiative for meritorious students from economically weaker sections who have scored above 80th percentile in their 12th standard exams and are pursuing regular higher education.',
-    eligibility: 'Students who score above the 80th percentile in their respective stream in 12th standard board exams, with a family income below ₹4.5 Lakh per annum, and are enrolled in regular degree courses (not distance learning).',
-    benefit: '₹12,000 per annum for UG/PG students (₹10,000 + ₹2,000 top-up for PG students), for up to 5 years.'
-  },
-  {
-    icon: 'fas fa-heart',
-    title: 'Single Parent / Orphan Scholarship',
-    about: 'This scholarship by the Tamil Nadu government supports students who are orphans or who come from single-parent households. Recognizing the unique financial and emotional hardships these students face, this scheme provides sustained support to complete their education.',
-    eligibility: 'Students who are orphans (both parents deceased) or who are raised by a single parent (mother or father only), pursuing higher education in government or government-aided institutions in Tamil Nadu.',
-    benefit: 'Monthly maintenance allowance, full tuition fee reimbursement, and hostel fee support in government institutions.'
-  }
+/* ============ FAQ ============ */
+const FAQ = [
+  ['What does Future Tech Career Solutions do?','We provide career guidance and counselling, education and admission guidance, training and skill development, academic support and employability-oriented support for students.'],
+  ['Is the first counselling session free?','Yes. Use the Free Career Counselling button to share your details, and our team will contact you.'],
+  ['Which courses can you guide me on?','We guide students across 12 course categories: Engineering, Medical, Nursing, Pharmacy, Allied Health, Therapy, Arts & Science, Management, Law, Education, Agriculture and Diploma.'],
+  ['Do you guarantee admission or a scholarship?','No. Admissions and scholarships depend on eligibility, availability and the rules of each institution or authority. We guide you through the process.'],
+  ['How do I contact you?','Message us on WhatsApp at +91 9789956246, email us, or fill in the enquiry form on this page.']
 ];
+document.getElementById('faqList').innerHTML = FAQ.map(f=>`<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join('');
 
-function buildScholarshipCards() {
-  const grid = document.getElementById('scholGrid');
-  if (!grid) return;
-  grid.innerHTML = '';
-  SCHOLARSHIPS.forEach((s, i) => {
-    const card = document.createElement('div');
-    card.className = 'schol-exp-card';
-    card.innerHTML = `
-      <div class="schol-exp-header" onclick="toggleSchol(${i})">
-        <div class="schol-exp-ic"><i class="${s.icon}"></i></div>
-        <div class="schol-exp-title">${s.title}</div>
-        <div class="schol-exp-arrow"><i class="fas fa-chevron-down"></i></div>
-      </div>
-      <div class="schol-exp-body">
-        <div class="schol-exp-inner">
-          <div class="schol-exp-divider"></div>
-          <div class="schol-about-label">About this Scheme</div>
-          <div class="schol-about-text">${s.about}</div>
-          <div class="schol-elig-label">Eligibility</div>
-          <div class="schol-elig-text">${s.eligibility}</div>
-          <div class="schol-benefit-box">
-            <i class="fas fa-check-circle"></i>
-            <div>
-              <div class="schol-benefit-label">Benefits</div>
-              <div class="schol-benefit-text">${s.benefit}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
-    grid.appendChild(card);
+/* ============ SCHOLARSHIPS (information only) ============ */
+const NSP = 'https://scholarships.gov.in';
+const SCHOLARSHIPS = [
+  {icon:'fas fa-user-graduate',title:'First Graduate Scholarship',about:'A Tamil Nadu scheme that supports students who are the first graduates in their family.',eligibility:'First person in the family to pursue a degree; admission through the applicable counselling process.',benefit:'Fee concession as per current government orders.',src:null},
+  {icon:'fas fa-users',title:'7.5% Horizontal Reservation (Government School Students)',about:'A Tamil Nadu reservation that improves access to professional courses for government school students.',eligibility:'Students who studied in Tamil Nadu government schools for the prescribed years, as defined in the current order.',benefit:'Reserved seats and fee support as per current government orders.',src:null},
+  {icon:'fas fa-id-card',title:'BC / MBC / DNC Scholarships',about:'Tamil Nadu welfare scholarships for students from Backward, Most Backward and Denotified communities.',eligibility:'Community and income criteria as per the current scheme guidelines.',benefit:'Fee reimbursement as per current guidelines.',src:null},
+  {icon:'fas fa-book',title:'Post-Matric Scholarship (SC / ST / SCA / SCC)',about:'A scholarship scheme for post-matric students from Scheduled Castes and Scheduled Tribes communities.',eligibility:'Community and parental income limits as notified in the current guidelines.',benefit:'Compulsory fees and maintenance allowance as per current guidelines.',src:NSP},
+  {icon:'fas fa-trophy',title:'Merit-based State Awards',about:'State-level awards for students with outstanding academic performance in public examinations.',eligibility:'Marks and rank criteria as announced for the year.',benefit:'Award or fee support as announced.',src:null},
+  {icon:'fas fa-wheelchair',title:'Scholarships for Differently-Abled Students',about:'Government support for students with disabilities who pursue higher education.',eligibility:'Valid disability certificate meeting the scheme threshold, and admission in a recognised institution.',benefit:'Fee and allowance support as per current guidelines.',src:null},
+  {icon:'fas fa-hand-holding-heart',title:'Support for Children of Widows and Destitute Women',about:'Financial assistance to help children of widows and destitute women continue their education.',eligibility:'Certificates and admission conditions as per the current scheme guidelines.',benefit:'Assistance as per current guidelines.',src:null},
+  {icon:'fas fa-female',title:'Pudhumai Penn Scheme',about:'A Tamil Nadu scheme that supports girl students from government schools in higher education.',eligibility:'Girl students who studied in Tamil Nadu government schools for the prescribed years and pursue eligible higher education programmes.',benefit:'Monthly financial assistance as notified by the government.',src:'https://pudhumaipenn.tn.gov.in'},
+  {icon:'fas fa-child',title:'Tamil Pudhalvan Scheme',about:'A Tamil Nadu scheme that supports boys from government schools in higher education.',eligibility:'Male students who studied in Tamil Nadu government schools for the prescribed years and pursue eligible higher education programmes.',benefit:'Monthly financial assistance as notified by the government.',src:null},
+  {icon:'fas fa-running',title:'Sports Scholarships',about:'Support for student athletes who have represented their state or country.',eligibility:'Participation or achievement recognised by the relevant sports authority.',benefit:'Concessions or incentives as announced by the awarding body.',src:null},
+  {icon:'fas fa-star',title:'Naan Mudhalvan',about:'A Tamil Nadu skilling and career readiness programme for students and youth.',eligibility:'Students of participating institutions and eligible youth, as per programme notices.',benefit:'Skill training, certification and placement-related support offered under the programme.',src:'https://www.naanmudhalvan.tn.gov.in'},
+  {icon:'fas fa-venus',title:'AICTE Pragati Scholarship (Girls)',about:'A central scheme that supports girl students in AICTE-approved technical programmes.',eligibility:'Girl students admitted to approved programmes within the family income limit set in the current guidelines.',benefit:'Annual financial support as per current guidelines.',src:NSP},
+  {icon:'fas fa-landmark',title:'Central Sector Scholarship Scheme',about:'A central scheme that supports meritorious students from lower-income families in regular higher education.',eligibility:'Board-exam percentile and family income criteria as per the current guidelines.',benefit:'Annual scholarship as per current guidelines.',src:NSP},
+  {icon:'fas fa-heart',title:'Orphan / Single-Parent Support',about:'Support for students who are orphans or from single-parent families.',eligibility:'Documents and institution type as per the current scheme guidelines.',benefit:'Assistance as per current guidelines.',src:null}
+];
+document.getElementById('lastVerified').textContent = CONFIG.scholarshipsLastVerified;
+document.getElementById('scholGrid').innerHTML = SCHOLARSHIPS.map((s,i)=>`
+ <div class="acc-item" id="sch${i}">
+  <button class="acc-btn" aria-expanded="false" aria-controls="schb${i}" onclick="toggleSchol(${i})">
+    <span class="ic"><i class="${s.icon}"></i></span><span class="t">${s.title}</span><i class="fas fa-chevron-down chev"></i>
+  </button>
+  <div class="acc-body" id="schb${i}">
+    <h4>About</h4><p>${s.about}</p>
+    <h4>Eligibility</h4><p>${s.eligibility}</p>
+    <div class="benefit"><h4 style="margin-top:0">Benefits</h4><p>${s.benefit}</p></div>
+    ${s.src?`<a class="src" href="${s.src}" target="_blank" rel="noopener">Official source <i class="fas fa-arrow-up-right-from-square"></i></a>`:`<span class="lv">Official link: confirm on the relevant government department portal.</span>`}
+    <span class="lv">Rules may change. Confirm before applying.</span>
+  </div>
+ </div>`).join('');
+function toggleSchol(i){
+  document.querySelectorAll('.acc-item').forEach((el,j)=>{
+    const open = j===i ? !el.classList.contains('open') : false;
+    el.classList.toggle('open',open);
+    el.querySelector('.acc-btn').setAttribute('aria-expanded',open);
   });
 }
 
-function toggleSchol(idx) {
-  const cards = document.querySelectorAll('.schol-exp-card');
-  cards.forEach((card, i) => {
-    if (i === idx) {
-      card.classList.toggle('open');
-    } else {
-      card.classList.remove('open');
-    }
-  });
+/* ============ BRANCH OFFICE TOGGLE ============ */
+if(!CONFIG.showBranchOffice) document.getElementById('branch').remove();
+
+/* ============ LEAD FORM (EmailJS) ============ */
+function showMsg(t,ok){const el=document.getElementById('form-msg');el.textContent=t;el.className=ok?'ok':'err'}
+function submitForm(e){
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  if(v('f-web')) return false; // honeypot: bots fill this
+  if(!v('f-name')||!v('f-phone')||!v('f-class')){showMsg('Please fill in student name, WhatsApp/mobile number and current class/qualification.',false);return false}
+  if(!/^[+0-9\s-]{10,15}$/.test(v('f-phone'))){showMsg('Please enter a valid mobile number.',false);return false}
+  if(v('f-email') && !/^\S+@\S+\.\S+$/.test(v('f-email'))){showMsg('Please enter a valid email address or leave it blank.',false);return false}
+  const btn=document.getElementById('submitBtn');
+  btn.disabled=true;btn.innerHTML='<i class="fas fa-spinner fa-spin"></i> Sending...';
+  const params={
+    to_email:CONFIG.leadEmail,
+    from_name:v('f-name'),
+    parent_name:v('f-parent')||'N/A',
+    phone:v('f-phone'),
+    reply_to:v('f-email')||'Not provided',
+    qualification:v('f-class'),
+    marks:v('f-marks')||'N/A',
+    course:v('f-course')||'Not selected',
+    city:v('f-loc')||'Not provided',
+    guidance_type:v('f-type')||'Not selected',
+    message:v('f-msg')||'N/A'
+  };
+  emailjs.send(CONFIG.emailjs.service,CONFIG.emailjs.template,params).then(()=>{
+    showMsg('Thank you. Your request has been sent and our team will contact you soon.',true);
+    document.getElementById('leadForm').reset();
+    if(window.gtag) gtag('event','generate_lead',{method:'website_form'});
+  }).catch(err=>{
+    console.error('EmailJS error:',err);
+    showMsg('We could not send your request. Please message us on WhatsApp at +91 9789956246 or email '+CONFIG.leadEmail+'.',false);
+  }).finally(()=>{btn.disabled=false;btn.innerHTML='<i class="fas fa-paper-plane"></i> Request counselling'});
+  return false;
 }
 
-buildScholarshipCards();
+route();
 </script>
 </body>
 </html>
