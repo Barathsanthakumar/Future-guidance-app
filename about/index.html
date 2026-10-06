@@ -3,18 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About Us | Future Tech Career Solutions (OPC) Private Limited</title>
+<title>About Us | Future Tech Career Solutions</title>
 <meta name="description" content="About Future Tech Career Solutions: career guidance, admission support, training and employability services for students, with a team of 15+ Expert Advisors.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#0b6fd6">
+<!-- Google Search Console: paste your verification tag here (or verify by DNS) -->
+<!-- <meta name="google-site-verification" content="PASTE_TOKEN_HERE"> -->
 <link rel="canonical" href="https://www.futureguidance.in/about/">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_IN">
 <meta property="og:site_name" content="Future Tech Career Solutions">
-<meta property="og:title" content="About Us | Future Tech Career Solutions (OPC) Private Limited">
+<meta property="og:title" content="About Us | Future Tech Career Solutions">
 <meta property="og:description" content="About Future Tech Career Solutions: career guidance, admission support, training and employability services for students, with a team of 15+ Expert Advisors.">
 <meta property="og:url" content="https://www.futureguidance.in/about/">
 <meta property="og:image" content="https://www.futureguidance.in/images/og-image.jpg">
@@ -22,7 +24,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Future Tech Career Solutions (OPC) Private Limited logo">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="About Us | Future Tech Career Solutions (OPC) Private Limited">
+<meta name="twitter:title" content="About Us | Future Tech Career Solutions">
 <meta name="twitter:description" content="About Future Tech Career Solutions: career guidance, admission support, training and employability services for students, with a team of 15+ Expert Advisors.">
 <meta name="twitter:image" content="https://www.futureguidance.in/images/og-image.jpg">
 
@@ -61,11 +63,13 @@ a{color:var(--blue)}
 /* header */
 header{position:sticky;top:0;z-index:600;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
 .hdr{max-width:1180px;margin:0 auto;padding:8px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0;flex:1 1 auto}
+.brand-name{min-width:0}
+.brand-name small{text-wrap:balance}
 .logo img{height:48px;width:auto}
 .logo b{font:900 22px 'Nunito',sans-serif;color:var(--blue);display:block;line-height:1.05;letter-spacing:.2px}
 .logo b i{font-style:normal;color:var(--green-text)}
-.logo small{display:block;font:700 9.5px 'Outfit',sans-serif;color:var(--ink);line-height:1.25;letter-spacing:.3px;text-transform:uppercase}
+.logo small{display:block;font:700 10.5px 'Outfit',sans-serif;color:var(--ink);line-height:1.25;letter-spacing:.2px;white-space:normal}
 nav{display:flex;align-items:center;gap:2px}
 nav a{padding:9px 12px;border-radius:8px;color:var(--ink);text-decoration:none;font-weight:500;font-size:14.5px;white-space:nowrap}
 nav a:hover{background:var(--blue-tint);color:var(--blue)}
@@ -75,13 +79,13 @@ nav a.cta:hover{background:#246f08}
 .ham{display:none;background:none;border:2px solid var(--blue-line);border-radius:8px;width:46px;height:46px;font-size:20px;color:var(--blue);cursor:pointer}
 @media(max-width:980px){
   .ham{display:block}
-  nav{display:none;position:fixed;top:68px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:10px 16px 18px;border-top:3px solid var(--green);box-shadow:0 12px 28px rgba(15,27,51,.14);max-height:calc(100vh - 68px);overflow:auto}
+  nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:10px 16px 18px;border-top:3px solid var(--green);box-shadow:0 12px 28px rgba(15,27,51,.14);max-height:calc(100vh - 90px);overflow:auto}
   nav.open{display:flex}
   nav a{padding:14px;font-size:16px;border-bottom:1px solid var(--line);border-radius:0}
   nav a.on{box-shadow:none;background:var(--blue-tint)}
   nav a.cta{text-align:center;margin:10px 0 0;border-radius:10px}
 }
-@media(max-width:400px){.logo b{font-size:19px}.logo small{font-size:8px}.logo img{height:42px}}
+@media(max-width:400px){.logo b{font-size:19px}.logo small{font-size:9px}.logo img{height:42px}.hdr{padding:8px 14px}}
 
 /* views */
 
@@ -115,7 +119,7 @@ nav a.cta:hover{background:#246f08}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:var(--shadow)}
 .ic{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px;background:var(--blue-tint);color:var(--blue)}
 .ic.g{background:var(--green-tint);color:var(--green-dark)}
-.card h3{font-size:18px;margin-bottom:6px}
+.card h3,.card h2{font-size:18px;margin-bottom:6px}
 .card p{color:var(--muted);font-size:15px}
 .pillar{border-top:4px solid var(--blue)}.pillar:nth-child(even){border-top-color:var(--green)}
 
@@ -193,7 +197,7 @@ blockquote{border-left:4px solid var(--green);background:var(--green-tint);paddi
 /* knowledge hub */
 .kh{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
 .kh article{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:var(--shadow)}
-.kh h3{font-size:19px;margin-bottom:8px}
+.kh h3,.kh h2{font-size:19px;margin-bottom:8px}
 .kh p,.kh li{font-size:15px;color:#33425a}
 .kh ul{padding-left:18px;margin-top:8px;display:grid;gap:4px}
 .kh .tag{display:inline-block;font-size:12.5px;font-weight:600;color:var(--green-dark);background:var(--green-tint);padding:3px 10px;border-radius:100px;margin-bottom:10px}
@@ -242,12 +246,17 @@ footer .tagline{color:var(--green);font-weight:600;margin-bottom:10px}
 .copy{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:12.5px;color:rgba(255,255,255,.55);text-align:center}
 
 /* sticky CTA */
-.sticky-cta{position:fixed;right:16px;bottom:16px;z-index:500;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
-.sticky-cta a{display:flex;align-items:center;gap:8px;border-radius:100px;text-decoration:none;font-weight:700;font-size:14.5px;padding:0 18px;height:50px;box-shadow:0 6px 20px rgba(15,27,51,.25)}
+.sticky-cta{position:fixed;right:16px;bottom:16px;z-index:500;display:flex;flex-direction:column;gap:10px;align-items:flex-end;transition:opacity .25s,transform .25s,visibility .25s}
+.sticky-cta.hide{opacity:0;visibility:hidden;transform:translateY(16px);pointer-events:none}
+.sticky-cta a{display:flex;align-items:center;gap:8px;border-radius:100px;text-decoration:none;font-weight:700;font-size:14.5px;padding:0 20px;height:50px;box-shadow:0 6px 20px rgba(15,27,51,.25)}
 .sticky-cta .wa{background:var(--green-dark);color:#fff}
 .sticky-cta .co{background:var(--blue);color:#fff}
-@media(max-width:600px){.sticky-cta{left:12px;right:12px;bottom:12px;flex-direction:row}.sticky-cta a{flex:1;justify-content:center;padding:0 10px}}
-@media(max-width:600px){body{padding-bottom:70px}}
+@media(max-width:600px){
+  .sticky-cta{left:0;right:0;bottom:0;flex-direction:row;gap:8px;align-items:stretch;background:#fff;border-top:1px solid var(--line);padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));box-shadow:0 -4px 16px rgba(15,27,51,.08)}
+  .sticky-cta a{height:48px;border-radius:10px;box-shadow:none;justify-content:center;padding:0 12px;font-size:14px}
+  .sticky-cta .wa{flex:0 0 auto}.sticky-cta .co{flex:1 1 auto;white-space:nowrap}
+  footer{padding-bottom:calc(24px + 76px)}
+}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
@@ -255,9 +264,9 @@ footer .tagline{color:var(--green);font-weight:600;margin-bottom:10px}
 
 <header>
   <div class="hdr">
-    <a class="logo" href="/" aria-label="Future Tech Career Solutions (OPC) Private Limited – home">
+    <a class="logo" href="/" aria-label="FUTURE TECH CAREER SOLUTIONS (OPC) PRIVATE LIMITED – Home">
       <picture><source srcset="/images/logo-emblem.webp" type="image/webp"><img src="/images/logo-emblem.png" alt="Future Tech FT shield logo" width="48" height="48"></picture>
-      <div><b>FUTURE <i>TECH</i></b><small>Career Solutions (OPC) Private Limited</small></div>
+      <div class="brand-name"><b>FUTURE <i>TECH</i></b><small>CAREER SOLUTIONS (OPC) PRIVATE LIMITED</small></div>
     </a>
     <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false">☰</button>
     <nav id="nav" aria-label="Main">
@@ -286,7 +295,7 @@ footer .tagline{color:var(--green);font-weight:600;margin-bottom:10px}
         <p style="color:#33425a;margin-bottom:14px">We also work towards collaboration with schools, colleges, universities, corporates, government bodies and other organisations for educational initiatives, career development, placement assistance, industry–academia interaction and skill-development activities.</p>
         <blockquote>Guiding Today, Building Tomorrow</blockquote>
         <div class="card" style="margin-top:16px">
-          <h3>Company details</h3>
+          <h2>Company details</h2>
           <p>CIN: U85500TZ2026OPC040738<br>Date of incorporation: 08 September 2026<br>Udyam Registration: UDYAM-TN-14-0116936</p>
         </div>
       </div>
@@ -294,9 +303,9 @@ footer .tagline{color:var(--green);font-weight:600;margin-bottom:10px}
   </section>
   <section class="sec alt">
     <div class="wrap grid g3">
-      <div class="card"><div class="ic"><i class="fas fa-bullseye"></i></div><h3>Our mission</h3><p>To help students make informed decisions about their future through reliable guidance, counselling and support.</p></div>
-      <div class="card"><div class="ic g"><i class="fas fa-eye"></i></div><h3>Our vision</h3><p>To empower students with knowledge, clarity and direction so they can build a successful and meaningful future.</p></div>
-      <div class="card"><div class="ic"><i class="fas fa-user-graduate"></i></div><h3>Our approach</h3><p>Personalised counselling with clear information on courses, eligibility, career scope and future opportunities.</p></div>
+      <div class="card"><div class="ic"><i class="fas fa-bullseye"></i></div><h2>Our mission</h2><p>To help students make informed decisions about their future through reliable guidance, counselling and support.</p></div>
+      <div class="card"><div class="ic g"><i class="fas fa-eye"></i></div><h2>Our vision</h2><p>To empower students with knowledge, clarity and direction so they can build a successful and meaningful future.</p></div>
+      <div class="card"><div class="ic"><i class="fas fa-user-graduate"></i></div><h2>Our approach</h2><p>Personalised counselling with clear information on courses, eligibility, career scope and future opportunities.</p></div>
     </div>
   </section>
   <section class="sec">
@@ -335,7 +344,8 @@ footer .tagline{color:var(--green);font-weight:600;margin-bottom:10px}
 </footer>
 
 <div class="sticky-cta">
-  <a class="co" href="/#contact"><i class="fas fa-comments"></i> Free Counselling</a>
+  <a class="wa" href="https://wa.me/919789956246?text=Hello%2C%20I%20would%20like%20free%20career%20counselling." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+  <a class="co" href="/#contact"><i class="fas fa-comments" aria-hidden="true"></i> Free Career Counselling</a>
 </div>
 
 <script>
@@ -543,7 +553,8 @@ const SCHOLARSHIPS = [
   about:'The Central Sector Scheme of Scholarship for College and University Students, now listed on NSP as PM-USP CSSS (merit based).',
   eligibility:'Meritorious students from lower-income families who meet the board-exam and income criteria in the guidelines, in regular courses.',
   benefit:'Annual scholarship as per the CSSS guidelines.',
-  apply:'On NSP. For 2026-27 the portal lists renewal applications only, and student applications closed on 30 September 2026. New applicants should watch NSP for the next cycle.',
+  apply:'On NSP. For 2026-27 the portal currently lists renewal applications only. New applicants should watch NSP for a fresh-application window.',
+  deadline:'NSP renewal applications for 2026-27 are open until 31 October 2026.',
   links:[['NSP scheme list',NSP_ALL],['Guidelines (PDF)',G+'CSSS_GUIDLINES_07022024_updated.pdf']]},
  {icon:'fas fa-female',title:'EVR Nagammai Scholarship',tags:['Tamil Nadu'],
   about:'A scholarship for girl students pursuing postgraduate Arts and Science degrees.',
@@ -613,14 +624,23 @@ function submitForm(e){
   emailjs.send(CONFIG.emailjs.service,CONFIG.emailjs.template,params).then(()=>{
     showMsg('Thank you. Your request has been sent and our team will contact you soon.',true);
     document.getElementById('leadForm').reset();
-    if(window.gtag) gtag('event','generate_lead',{method:'website_form'});
+    if(window.gtag){ gtag('event','generate_lead',{method:'website_form'}); gtag('event','enquiry_form_submit'); }
   }).catch(err=>{
     console.error('EmailJS error:',err);
+    if(window.gtag) gtag('event','enquiry_form_error');
     showMsg('We could not send your request. Please message us on WhatsApp at +91 9789956246 or email '+CONFIG.leadEmail+'.',false);
   }).finally(()=>{btn.disabled=false;btn.innerHTML='<i class="fas fa-paper-plane"></i> Request counselling'});
   return false;
 }
 
+/* ============ STICKY CTA: hide while the contact form or footer is on screen ============ */
+(function(){
+  const bar=document.querySelector('.sticky-cta'); if(!bar||!('IntersectionObserver' in window)) return;
+  const targets=[document.querySelector('#contact'),document.querySelector('footer')].filter(Boolean);
+  const seen=new Set();
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{e.isIntersecting?seen.add(e.target):seen.delete(e.target)});bar.classList.toggle('hide',seen.size>0)},{threshold:0.05});
+  targets.forEach(t=>io.observe(t));
+})();
 /* ============ ANALYTICS & CONVERSION TRACKING ============ */
 if(CONFIG.gaId){
   const g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id='+CONFIG.gaId;document.head.appendChild(g);
@@ -629,7 +649,9 @@ if(CONFIG.gaId){
 document.addEventListener('click',e=>{
   const a=e.target.closest('a'); if(!a||!window.gtag) return;
   const h=a.getAttribute('href')||'';
-  if(h.includes('wa.me')) gtag('event','whatsapp_click');
+  const where = a.closest('header')?'header':a.closest('.sticky-cta')?'sticky_bar':a.closest('.hero')?'hero':a.closest('footer')?'footer':'page';
+  if(/#contact$/.test(h) && /counselling/i.test(a.textContent)) gtag('event','free_counselling_click',{location:where});
+  if(h.includes('wa.me')) gtag('event','whatsapp_click',{location:where});
   else if(h.startsWith('tel:')) gtag('event','phone_click');
   else if(h.startsWith('mailto:')) gtag('event','email_click');
 });
